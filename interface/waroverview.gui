@@ -4,7 +4,7 @@ guiTypes = {
 	windowType = {
 		name = "waricon_box"
 		backGround =""
-		position = { x = -660 y = -50 }
+		position = { x = -1960 y = -50 }
 		size = { x = 200 y = 100 }
 		moveable = 0
 		dontRender = ""
@@ -16,7 +16,7 @@ guiTypes = {
 		OverlappingElementsBoxType = {
 			name = "box"
 			position = { x = 0 y = 0 }
-			size = { x=380 y=100 }
+			size = { x=1700 y=100 }
 			format = right
 		}
 	}

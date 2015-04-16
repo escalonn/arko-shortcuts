@@ -73,7 +73,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "OK"
 			buttonFont = "vic_18"
-			shortcut = "ENTER"
+			shortcut = "c"
 			clicksound=generic_click_04
 		}
 
@@ -85,7 +85,7 @@ guiTypes = {
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
 			clicksound=generic_click_04
-			shortcut = "ESCAPE"
+			shortcut = "z"
 		}
 	}
 
@@ -150,7 +150,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "OK"
 			buttonFont = "vic_18"
-			shortcut = "ENTER"
+			shortcut = "c"
 			clicksound=generic_click_04
 		}
 
@@ -161,7 +161,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
-			shortcut = "ESCAPE"
+			shortcut = "z"
 			clicksound=generic_click_04
 		}
 	}
@@ -223,7 +223,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "OK"
 			buttonFont = "vic_18"
-			shortcut = "ENTER"
+			shortcut = "c"
 			clicksound=generic_click_04
 		}
 
@@ -233,7 +233,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
-			shortcut = "ESCAPE"
+			shortcut = "z"
 			clicksound=generic_click_04
 		}
 	}
@@ -615,7 +615,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_big_button_220"
 			buttonText = "QUIT_TO_MENU"
 			buttonFont = "vic_22"
-			shortcut = "ESCAPE"
 		}
 		guiButtonType = {
 			name = "ScoreButton"
@@ -940,7 +939,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "OK"
 			buttonFont = "vic_18"
-			shortcut = "ESCAPE"
+			shortcut = "c"
 			clicksound = generic_click_04
 		}
 		
@@ -1021,7 +1020,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "OK"
 			buttonFont = "vic_18"
-			shortcut = "ENTER"
+			shortcut = "c"
 		}
 
 		
@@ -1180,7 +1179,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "OK"
 			buttonFont = "vic_18"
-			shortcut = "ENTER"
+			shortcut = "c"
 		}
 
 
@@ -1190,7 +1189,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
-			shortcut = "ESCAPE"
+			shortcut = "z"
 		}
 		
 		guiButtonType = {
@@ -1199,7 +1198,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_148"
 			buttonText = "OK"
 			buttonFont = "vic_18"
-			shortcut = "ENTER"
+			shortcut = "c"
 		}
 		
 		

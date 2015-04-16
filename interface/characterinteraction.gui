@@ -128,7 +128,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "OK"
 			buttonFont = "common"
-			shortcut = "ENTER"
+			shortcut = "c"
 		}
 
 
@@ -141,7 +141,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "CANCEL"
 			buttonFont = "common"
-			shortcut = "ESCAPE"
+			shortcut = "z"
 		}
 
 		guiButtonType = {
@@ -227,7 +227,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "OK"
 			buttonFont = "common"
-			shortcut = "ENTER"
+			shortcut = "c"
 		}
 
 
@@ -240,7 +240,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "CANCEL"
 			buttonFont = "common"
-			shortcut = "ESCAPE"
+			shortcut = "z"
 		}
 
 		guiButtonType = {
@@ -332,7 +332,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "OK"
 			buttonFont = "common"
-			shortcut = "ENTER"
+			shortcut = "c"
 		}
 
 
@@ -345,7 +345,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "CANCEL"
 			buttonFont = "common"
-			shortcut = "ESCAPE"
+			shortcut = "z"
 		}
 
 		guiButtonType = {
@@ -443,7 +443,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "OK"
 			buttonFont = "common"
-			shortcut = "ENTER"
+			shortcut = "c"
 		}
 
 
@@ -456,7 +456,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "CANCEL"
 			buttonFont = "common"
-			shortcut = "ESCAPE"
+			shortcut = "z"
 		}
 
 		guiButtonType = {

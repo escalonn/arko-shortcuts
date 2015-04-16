@@ -27,6 +27,7 @@ guiTypes = {
 				name = "button_embarked"
 				position = { x = 55 y = 0 }
 				quadTextureSprite ="GFX_unitpanel_navy_embarked"
+				shortcut = "v"
 
 			}
 
@@ -160,12 +161,14 @@ guiTypes = {
 				name = "disbandbutton"
 				position = { x = 74 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_disband"
+				shortcut = "x"
 				clicksound = generic_click_01
 			}
 		guiButtonType = {
 				name = "newunitbutton"
 				position = { x = 103 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_reorg"
+				shortcut = "b"
 				clicksound = generic_click_01
 		}
 		guiButtonType = {
@@ -173,11 +176,13 @@ guiTypes = {
 				position = { x = 131 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_splithalf"
 				clicksound = generic_click_01
+				shortcut = "n"
 		}			
 		guiButtonType = {
 				name = "loadtoshipbutton"
 				position = { x = 159 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_loadtoship"
+				shortcut = "v"
 				clicksound = generic_click_01
 		}
 		guiButtonType = {
@@ -204,6 +209,7 @@ guiTypes = {
 			position = { x = 250 y = 32 }
 			quadTextureSprite = "GFX_unitpanel_button_looter_toggle"
 			clicksound = generic_click_01
+			shortcut = "l"
 		}
 		
 	}
@@ -235,6 +241,7 @@ guiTypes = {
 				name = "button_embarked"
 				position = { x = 55 y = 0 }
 				quadTextureSprite ="GFX_unitpanel_navy_embarked"
+				shortcut = "v"
 			}
 
 			instantTextBoxType = {
@@ -288,6 +295,7 @@ guiTypes = {
 				name = "remove_unit_from_selection_button"
 				position = { x = 325 y = 14 }
 				quadTextureSprite ="GFX_main_close_button"
+				shortcut = "v"
 		}
 		
 		iconType =
@@ -367,12 +375,14 @@ guiTypes = {
 				name = "disbandbutton"
 				position = { x = 74 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_disband"
+				shortcut = "x"
 				clicksound = generic_click_01
 			}
 		guiButtonType = {
 				name = "newunitbutton"
 				position = { x = 103 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_reorg"
+				shortcut = "b"
 				clicksound = generic_click_01
 		}
 		guiButtonType = {
@@ -380,11 +390,13 @@ guiTypes = {
 				position = { x = 131 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_splithalf"
 				clicksound = generic_click_01
+				shortcut = "n"
 		}			
 		guiButtonType = {
 				name = "loadtoshipbutton"
 				position = { x = 159 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_loadtoship"
+				shortcut = "v"
 				clicksound = generic_click_01
 		}
 		guiButtonType = {
@@ -462,6 +474,7 @@ guiTypes = {
 			name = "dibandallbutton"
 			position = { x = 162 y = 11 }
 			quadTextureSprite ="GFX_unitpanel_button_disband"
+			shortcut = "X"
 			clicksound = generic_click_01
 		}
 
@@ -470,13 +483,14 @@ guiTypes = {
 				position = { x = 192 y = 9 }
 				quadTextureSprite ="GFX_unitpanel_multi_merge"
 				clicksound = generic_click_01
-				priority_shortcut = "g"
+				shortcut = "n"
 			}
 
 		guiButtonType = {
 				name = "reorganizebutton"
 				position = { x = 222 y = 9 }
 				quadTextureSprite ="GFX_unitpanel_multi_reorg"
+				shortcut = "b"
 				clicksound = generic_click_01
 			}
 		guiButtonType = {
@@ -1321,6 +1335,7 @@ guiTypes = {
 			position = { x= 320 y = 5 }
 			Orientation = "UPPER_LEFT"
 			clicksound = generic_click_04
+			shortcut = "b"
 		}
 		guiButtonType = {
 			name ="transferbutton2"
@@ -1328,6 +1343,7 @@ guiTypes = {
 			position = { x= 1 y = 5 }
 			Orientation = "UPPER_LEFT"
 			clicksound = generic_click_04
+			shortcut = "z"
 		}
 	}
 
@@ -1731,6 +1747,7 @@ guiTypes = {
 				position = { x = 331 y = 7 }
 				quadTextureSprite ="GFX_unitpanel_right"
 				clicksound = generic_click_04
+				shortcut = "b"
 			}
 			
 		### units
@@ -1950,6 +1967,7 @@ guiTypes = {
 				position = { x = 10 y = 7 }
 				quadTextureSprite ="GFX_unitpanel_left"
 				clicksound = generic_click_04
+				shortcut = "z"
 			}
 			
 		### units
