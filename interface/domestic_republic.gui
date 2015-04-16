@@ -67,16 +67,16 @@ guiTypes = {
 			
 			guiButtonType = {
 				name ="republic_shield"
-				quadTextureSprite = "GFX_shield_medium"
-				position = { x= 20 y = 63 }
+				quadTextureSprite = "GFX_shield_big"
+				position = { x= 10 y = 12 }
 				Orientation = "UPPER_LEFT"
 			}
-			iconType = {
-				name = "republic_shield_crown_strip"
-				spriteType = "GFX_shield_crown_strip_medium"
-				position = { x= 32 y = 40 }
-				Orientation = "UPPER_LEFT"
-			}
+#			iconType = {
+#				name = "republic_shield_crown_strip"
+#				spriteType = "GFX_shield_crown_strip_big"
+#				position = { x= 32 y = 35 }
+#				Orientation = "UPPER_LEFT"
+#			}
 			
 			instantTextBoxType = {
 				name = "republic_name"
@@ -396,14 +396,14 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 5 y = 2 }
+			position = { x = 2 y = 2 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
 			text = "0"
-			maxWidth = 92
+			maxWidth = 97
 			maxHeight = 20
-			format = left
+			format = centre
 			fixedsize = yes
 		}
 

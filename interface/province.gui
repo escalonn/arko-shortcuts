@@ -3,7 +3,7 @@ guiTypes = {
 	windowType = {
 		name = "province"   
 		backGround =""
-		position = { x=0 y=-624 }
+		position = { x=-18 y=-392 }
 		size = { x=1024 y=224	 }
 		moveable = 0
 		dontRender = ""
@@ -12,6 +12,8 @@ guiTypes = {
 		fullScreen = no
 		orientation = "LOWER_LEFT"
 		upsound = click
+
+
 		
 		iconType = {
 			name ="bg_province"
@@ -19,38 +21,51 @@ guiTypes = {
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
+		iconType = {
+			name ="domaine"
+			spriteType = "GFX_domaine"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="bg_parchemin"
+			spriteType = "GFX_trade_post_bg"
+			position = { x= 273 y = 32 }
+			Orientation = "UPPER_LEFT"
+		}
 		
 		guiButtonType = {
 			name = "make_capital"
 			quadTextureSprite = "GFX_province_make_capitol"
-			position = { x = 57 y = 8 }
+			position = { x = 30 y = 3 }
 			Orientation = "UPPER_LEFT"
 			clicksound = generic_click_04
 		}
 		iconType = {
 			name ="capital_icon"
 			spriteType = "GFX_province_capitol_icon"
-			position = { x= 57 y = 8 }
+			position = { x= 30 y = 3 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		guiButtonType = {
 			name = "button_close"
-			position = { x = 320 y = 6 }
+			position = { x = 661 y = 9 }
 			quadTextureSprite ="GFX_main_close_button"
 			shortcut = "ESCAPE"
 		}
 		
 		guiButtonType =	{
 			name = "button_raise_levy"
-			position = { x=180 y=354 }
+			position = { x=602 y=160 }
 			quadTextureSprite ="GFX_military_troop_strip_1"	
 			Orientation = "UPPER_LEFT"
 		}
 
 		guiButtonType =	{
 			name = "button_raise_ships"
-			position = { x=220 y=354 }
+			position = { x=635 y=160 }
 			quadTextureSprite ="GFX_military_troop_strip_1"	
 			Orientation = "UPPER_LEFT"
 		}
@@ -58,26 +73,26 @@ guiTypes = {
 		iconType = {
 			name ="loot_progress"
 			spriteType = "GFX_lootprogress"
-			position = { x= 176 y = 291 }
+			position = { x= 310 y = 172 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name ="loot_progress_frame"
-			spriteType = "GFX_loot_progress_frame"
-			position = { x= 174 y = 287 }
+			spriteType = "GFX_loot_progress_frame" 
+			position = { x= 309 y = 168 } #x+1 y-4
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name = "loot_protected_icon"
 			spriteType = "GFX_loot_protected_icon"
-			position = { x = 174 y = 290 }
+			position = { x = 307 y = 175 } #x== y+3
 			Orientation = "UPPER_LEFT"
 		}
 
 		guiButtonType = {
-			name = "pv_county_shield"
-			position = { x= 0 y = 22 }
+			name = "pv_county_shield" #province shield
+			position = { x= 14 y = 44 }
 			quadTextureSprite ="GFX_shield_medium"
 			Orientation = "UPPER_LEFT"
 		}
@@ -86,53 +101,54 @@ guiTypes = {
 		{
 			name ="county_crown"
 			spriteType = "GFX_shield_crown_strip_medium"
-			position = { x= 12 y = -1 }
+			position = { x= 26 y = 21 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		editBoxType = {
 			name = "province_name"
-			position = { x = 82 y = 5 }
+			position = { x = 70 y = 0 } # ex 82 ; 5
 			textureFile = ""
-			font = "vic_22"
+			font = "ark_22"
 			borderSize = {x = 4 y = 4}
 			text = ""
 			size = { x=180 y=32}
+			format = center
 			cursor = { x=4 y=1 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
-			name = "province_tier_shield1"
-			position = { x= 212 y = 42 }
-			quadTextureSprite ="GFX_shield_small"
+			name = "province_tier_shield1" #DF duchy coa
+			position = { x= 224 y = 107 }
+			quadTextureSprite ="GFX_shield_medium2"
 			Orientation = "UPPER_LEFT"
 		}
 		iconType =
 		{
 			name ="province_tier_shield1_crown"
-			spriteType = "GFX_shield_crown_strip_small"
-			position = { x= 218 y = 30 }
+			spriteType = "GFX_shield_crown_strip_medium2"
+			position = { x= 235 y = 92 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
-			name = "province_tier_shield2"
-			position = { x= 238 y = 42 }
-			quadTextureSprite ="GFX_shield_small"
+			name = "province_tier_shield2" #DF kingdom coa
+			position = { x= 224 y = 159 }
+			quadTextureSprite ="GFX_shield_medium2"
 			Orientation = "UPPER_LEFT"
 		}
 		iconType =
 		{
 			name ="province_tier_shield2_crown"
-			spriteType = "GFX_shield_crown_strip_small"
-			position = { x= 244 y = 30 }
+			spriteType = "GFX_shield_crown_strip_medium2"
+			position = { x= 235 y = 142 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
-			name = "province_tier_shield3"
-			position = { x= 260 y = 22 }
+			name = "province_tier_shield3"  #DF upper liege coa
+			position = { x= 218 y = 44 }
 			quadTextureSprite ="GFX_shield_medium"
 			Orientation = "UPPER_LEFT"
 		}
@@ -140,63 +156,63 @@ guiTypes = {
 		{
 			name ="province_tier_shield3_crown"
 			spriteType = "GFX_shield_crown_strip_medium"
-			position = { x= 272 y = -1 }
+			position = { x= 230 y = 21 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
 			name ="ruler_portrait"
 			quadTextureSprite = "GFX_char_100"
-			position = { x = 64 y = 69 }
+			position = { x = 100 y = 46 }
 			pdx_tooltip = "CHARACTER_TOOLTIP"
 			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
 		}
 		guiButtonType = {
 			name ="ruler_portrait_frame"
 			quadTextureSprite = "GFX_charframe_100"
-			position = { x= 56 y = 60 }
+			position = { x= 92 y = 37 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
-			name ="ruler_portrait_status"
-			spriteType = "GFX_overlay_char_status_100"
-			position = { x= 63 y = 68 }
-			Orientation = "UPPER_LEFT"
-		}
-		iconType = {
-			name ="ruler_portrait_relation"
-			spriteType = "GFX_overlay_char_relation_100"
-			position = { x= 133 y = 68 }
-			Orientation = "UPPER_LEFT"
-		}
+				name ="ruler_portrait_status"
+				spriteType = "GFX_overlay_char_status_100"
+				position = { x= 99 y = 31 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="ruler_portrait_relation"
+				spriteType = "GFX_overlay_char_relation_100"
+				position = { x= 159 y = 31 }
+				Orientation = "UPPER_LEFT"
+			}
 		
 #		guiButtonType = {
 #			name = "diplomacy_button"
-#			position = { x=9 y=138 }
+#			position = { x=51 y=115 }
 #			quadTextureSprite ="GFX_button_goto_diplo"	
 #			clicksound = generic_click_02
 #		}
 		
-		OverlappingElementsBoxType = {
+		OverlappingElementsBoxType = { #guerre treves en cours
 			name = "info_list_box"
-			position = { x = 28 y = 179 }
-			size = { x = 160 y = 32 }
+			position = { x = 73 y = 158 }
+			size = { x = 142 y = 32 }
 			format = left
 			spacing = 0
 		}
 		
 		OverlappingElementsBoxType = {
-			name = "temp_mods_box"
-			position = { x = 10 y = 225 }
-			size = { x=140 y= 32 }
+			name = "temp_mods_box" #province modifiers
+			position = { x = 33 y = 204 }
+			size = { x=522 y= 32 }
 			Orientation = "UPPER_LEFT"
 			format = left
 			spacing = 0
 		}
 		OverlappingElementsBoxType = {
 			name = "diseases_box"
-			position = { x = 155 y = 224 }
-			size = { x = 140 y = 32 }
+			position = { x = 594 y = 203 }
+			size = { x = 71 y = 32 }
 			format = right
 			spacing = 0
 		}
@@ -206,24 +222,24 @@ guiTypes = {
 		
 		OverlappingElementsBoxType = {
 			name = "settlements_1_box"
-			position = { x = 6 y = 400 }
-			size = { x=520 y=128 }
+			position = { x = 21 y = 260 }
+			size = { x=522 y=128 }
 			format = left
-			spacing = 0
+			spacing = -3
 		}
 		OverlappingElementsBoxType = {
 			name = "settlements_2_box"
-			position = { x = 6 y = 508 }
+			position = { x = 344 y = 260 }
 			size = { x=520 y=128 }
 			format = left
-			spacing = 0
+			spacing = -3
 		}
 		####
-		
+###TRADEVIEW	
 		windowType = {
 			name = "trade_window"   
 			backGround =""
-			position = { x=6 y=399 }
+			position = { x=0 y=237 }
 			size = { x=1024 y=224	 }
 			moveable = 0
 			dontRender = ""
@@ -235,141 +251,153 @@ guiTypes = {
 		
 			iconType = {
 				name ="trade_post_bg"
-				spriteType = "GFX_trade_post_bg"
-				position = { x= 0 y = 0 }
+				spriteType = "GFX_parchemin_arko"
+				position = { x= 273 y = 0 }
 			}
 			iconType = {
 				name ="trade_post_bg_notbuilt"
 				spriteType = "GFX_trade_post_bg_notbuilt"
-				position = { x= 0 y = 0 }
+				position = { x= 273 y = 0 }
 			}
 		
 			guiButtonType = {
 				name = "trade_post"
-				position = { x = 23 y = 26 }
+				position = { x = 465 y = -1 }
 				quadTextureSprite = "GFX_trade_post"
 				Orientation = "UPPER_LEFT"
 			}
 			
 			guiButtonType = {
 				name = "republic_shield"
-				position = { x= 132 y = 23 }
-				quadTextureSprite ="GFX_shield_small"
+				position = { x= 498 y = -5 }
+				quadTextureSprite ="GFX_shield_medium"
 				Orientation = "UPPER_LEFT"
 			}
 			iconType =
 			{
 				name ="republic_crown"
-				spriteType = "GFX_shield_crown_strip_small"
-				position = { x= 138 y = 11 }
+				spriteType = "GFX_shield_crown_strip_medium"
+				position = { x= -100 y = 11 }
 				Orientation = "UPPER_LEFT"
 			}
 		
 			guiButtonType = {
 				name = "family_shield"
-				position = { x= 136 y = 57 }
-				quadTextureSprite ="GFX_CoA_small"
+				position = { x= 292 y = 16 }
+				quadTextureSprite ="GFX_CoA_medium"
 				Orientation = "UPPER_LEFT"
 			}
 			
 			guiButtonType = {
 				name ="control_shield"
-				quadTextureSprite = "GFX_shield_small"
-				position = { x = 10 y = 15 }
+				quadTextureSprite = "GFX_shield_medium2"
+				position = { x = 439 y = -8 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 						iconType = {
 							name ="progress_bg1"
 							spriteType = "GFX_levy_progress_bg"
-							position = { x= 24 y = 102 }
+							position = { x= 598 y = 90 }
 							Orientation = "UPPER_LEFT"
 						}
 						iconType = {
 							name ="garrison_size"
+							#spriteType = "GFX_levyprogress_1"
 							spriteType = "GFX_levyprogress_1"
-							position = { x= 28 y = 107 }
+							position = { x= 602 y = 85 } #x+5 y+5
 							Orientation = "UPPER_LEFT"
 						}
+			iconType = {
+				name = "garrison_icon2"
+			#	spriteType = "GFX_combat_siege_end_garrison"
+			#	name ="garrison_arko"
+				spriteType = "gfx_transparency_white"
+				position = { x= 610 y = 73 }
+				Orientation = "UPPER_LEFT"
+			#	pdx_tooltip = "GARRISON_SIZE"
+			}
 						iconType = {
 							name = "garrison_icon"
-							spriteType = "GFX_combat_siege_end_garrison"
-							position = { x= 7 y = 97 }
+							#spriteType = "GFX_combat_siege_end_garrison"
+							spriteType = "GFX_garrison_arko"
+							position = { x= 600 y = 69 } #x-19 y-4
 							Orientation = "UPPER_LEFT"
 						}
-			
+
+			iconType = {
+				name ="label_republic_arko"
+				spriteType ="GFX_label_arko"
+				position = { x = 464 y = 120 }
+				Orientation = "UPPER_LEFT"
+			}
+						
 			instantTextBoxType = {
 				name = "republic_name"
-				position = { x = 165 y = 27 }
+				position = { x = 465 y = 125 }
 				textureFile = ""
-				font = "vic_22"
+				font = "vic_22_black"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 140
+				maxWidth = 128
 				maxHeight = 20
-				format = left
+				format = center
 				Orientation = "UPPER_LEFT"
 				fixedsize = yes
 			}
 			instantTextBoxType = {
 				name = "family_name"
-				position = { x = 165 y = 57 }
+				position = { x = 347 y = 16 } #ex y=28
 				textureFile = ""
-				font = "vic_22"
-				borderSize = {x = 0 y = 0}
+				font = "vic_22_black"
+				borderSize = {x = -5 y = 0}
 				text = ""
-				maxWidth = 140
+				maxWidth = 120
 				maxHeight = 20
-				format = left
+				format = center
 				Orientation = "UPPER_LEFT"
 				fixedsize = yes
 			}
 			iconType = {
 				name ="tax_icon"
 				spriteType ="GFX_icon_wealth"
-				position = { x = 126 y = 87 }
+				position = { x = 604 y = 112 }
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "INCOME_TRADEPOST"
 			}
 			iconType = {
 				name ="fort_icon"
 				spriteType ="GFX_buildview_fort_icon"
-				position = { x = 196 y = 88 }
+				position = { x = 600 y = 35 }
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "FORT_LEVEL"
 			}
-			iconType = {
-				name ="garrison_icon2"
-				spriteType = "GFX_combat_siege_end_garrison"
-				position = { x= 254 y = 89 }
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "GARRISON_SIZE"
-			}
+
 			
 			instantTextBoxType = {
 				name = "settlement_Taxinfo"
-				position = { x = 153 y = 94 }
+				position = { x = 625 y = 119 } #x+30 y+7
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 50
+				maxWidth = 35
 				maxHeight = 25
-				format = left
+				format = right
 				fixedsize = yes
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextBoxType = {
 				name = "settlement_Fortlevel"
-				position = { x = 224 y = 94 }
+				position = { x = 625 y = 43 } #x+41 y+6
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 32
+				maxWidth = 35
 				maxHeight = 25
-				format = left
+				format = right
 				fixedsize = yes
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "FORT_LEVEL"
@@ -377,14 +405,14 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "settlement_GarrisonSize"
-				position = { x = 275 y = 94 }
+				position = { x = 624 y = 80 } #x+21 y+5
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 40
+				maxWidth = 35
 				maxHeight = 25
-				format = left
+				format = right
 				fixedsize = yes
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "GARRISON_SIZE"
@@ -393,9 +421,9 @@ guiTypes = {
 			### trade zone
 			instantTextBoxType = {
 				name = "TradeZone_label"
-				position = { x = 25 y = 138 }
+				position = { x = 290 y = 80 } #x+330 y-110
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = "TRADE_ZONE"
 				maxWidth = 120
@@ -408,39 +436,39 @@ guiTypes = {
 			iconType = {
 				name ="tradezone_value_icon"
 				spriteType = "GFX_trade_zone_value"
-				position = { x= 117 y = 134 }
+				position = { x= 312 y = 98 }
 			}
 			
 			instantTextBoxType = {
 				name = "tradezone_value"
-				position = { x = 147 y = 138 }
+				position = { x = 302 y = 121 }
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = "666"
-				maxWidth = 40
+				maxWidth = 48
 				maxHeight = 25
-				format = left
+				format = centre
 				fixedsize = yes
 			}
 			
 			iconType = {
 				name ="tradezone_size_icon"
 				spriteType = "GFX_trade_zone_size"
-				position = { x= 187 y = 138 }
+				position = { x= 358 y = 103 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextBoxType = {
 				name = "tradezone_size"
-				position = { x = 213 y = 138 }
+				position = { x = 347 y = 121 }
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 30
+				maxWidth = 48
 				maxHeight = 25
-				format = left
+				format = centre
 				fixedsize = yes
 				Orientation = "UPPER_LEFT"
 			}
@@ -448,20 +476,20 @@ guiTypes = {
 			iconType = {
 				name ="tradezone_income_icon"
 				spriteType ="GFX_icon_wealth"
-				position = { x = 241 y = 132 }
+				position = { x = 409 y = 95 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextBoxType = {
 				name = "tradezone_income"
-				position = { x = 267 y = 138 }
+				position = { x = 399 y = 121 } #x+31 y+7
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 45
+				maxWidth = 48
 				maxHeight = 25
-				format = left
+				format = center
 				fixedsize = yes
 				Orientation = "UPPER_LEFT"
 			}
@@ -469,33 +497,33 @@ guiTypes = {
 			### family income
 			instantTextBoxType = {
 				name = "FamilyIncome_label"
-				position = { x = 25 y = 176 }
+				position = { x = -290 y = 114 }
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = "TOTAL_TRADE_FAMILY"
 				maxWidth = 120
 				maxHeight = 25
-				format = left
+				format = centre
 				fixedsize = yes
 			}
 			iconType = {
 				name ="Family_size_icon"
 				spriteType = "GFX_trade_zone_size"
-				position = { x= 187 y = 176 }
+				position = { x= 358 y = 45 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextBoxType = {
 				name = "Family_size"
-				position = { x = 213 y = 176 }
+				position = { x = 347 y = 64 } #x+26 y+2
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = "666"
-				maxWidth = 30
+				maxWidth = 48
 				maxHeight = 25
-				format = left
+				format = centre
 				fixedsize = yes
 				Orientation = "UPPER_LEFT"
 			}
@@ -503,45 +531,47 @@ guiTypes = {
 			iconType = {
 				name ="Family_income_icon"
 				spriteType ="GFX_icon_wealth"
-				position = { x = 241 y = 170 }
+				position = { x = 409 y = 37 }
 
 			}
 			
 			instantTextBoxType = {
 				name = "Family_income"
-				position = { x = 267 y = 176 }
+				position = { x = 399 y = 64 } #x+31 y+7
 				textureFile = ""
-				font = "vic_18"
+				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = "666"
-				maxWidth = 45
+				maxWidth = 48
 				maxHeight = 25
-				format = left
+				format = center
 				fixedsize = yes
 			}
 			
-			iconType = {
+			iconType = { #"no trade post built" + barre progression construction.
 				name ="build_progress"
-				spriteType = "GFX_default_progress"
-				position = { x= 38 y = 150 }
+				#spriteType = "GFX_default_progress"
+				spriteType = "GFX_default_progress_arko"
+				position = { x= 284 y = 64 }
 			}
 			iconType = {
 				name ="build_progress_overlay"
 				spriteType = "GFX_default_progress_overlay"
-				position = { x= 30 y = 141 }
+				position = { x= 284 y = 62 } #x-8 y-9
 			}
 			instantTextBoxType = {
 				name = "info_text"
-				position = { x = 37 y = 156 }
+				position = { x = 301 y = 82 }
 				textureFile = ""
-				font = "vic_22"
+				font = "vic_22_black"
+				#borderSize = {x = 0 y = 0}
 				borderSize = {x = 0 y = 0}
 				text = "TP_NO_TRADE_POST_BUILT"
-				maxWidth = 256
-				maxHeight = 24
+				maxWidth = 145
+				maxHeight = 80
 				format = centre
 				fixedsize = yes
-				
+
 				allwaystransparent = yes
 			}
 		}
@@ -549,7 +579,7 @@ guiTypes = {
 		### tabs for trade post / holdings.
 		guiButtonType = {
 			name = "tradetab_settlements"
-			position = { x = 343 y = 402 }
+			position = { x = 681 y = 289 }
 			quadTextureSprite = "GFX_province_tab_button"
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "LEDGER_PROVINCE_SETTLEMENTS"
@@ -557,11 +587,11 @@ guiTypes = {
 		iconType = {
 			name ="holding_tab_icon"
 			spriteType ="GFX_holding_tab_icon"
-			position = { x = 345 y = 412 }
+			position = { x = 683 y = 299 }
 		}
 		guiButtonType = {
 			name = "tradetab_trade"
-			position = { x = 343 y = 453 }
+			position = { x = 681 y = 340 }
 			quadTextureSprite = "GFX_province_tab_button"
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "TRADE"
@@ -569,125 +599,134 @@ guiTypes = {
 		iconType = {
 			name ="trade_post_tab_icon"
 			spriteType ="GFX_trade_post_tab_icon"
-			position = { x = 341 y = 461 }
+			position = { x = 679 y = 348 }
 		}
 
 		######
-		
+		#general province info
+
+	
 		guiButtonType = {
-			name = "kingdom_shield"
-			position = { x= 16 y = 269 }
-			quadTextureSprite ="GFX_shield_small"
+			name = "kingdom_shield" #DJ
+			position = { x= 303 y = 58 }
+			#position = { x= 433 y = 46 }
+			quadTextureSprite ="GFX_shield_medium2"
 			Orientation = "UPPER_LEFT"
 		}
 		guiButtonType = {
-			name = "duchy_shield"
-			position = { x= 16 y = 304 }
-			quadTextureSprite ="GFX_shield_small"
+			name = "duchy_shield" #DJ
+			#position = { x= 420 y = 75 }
+			position = { x= 394 y = 58 }
+			quadTextureSprite ="GFX_shield_medium2"
 			Orientation = "UPPER_LEFT"
 		}
 		iconType =
 		{
 			name ="crown_1"
-			spriteType = "GFX_shield_crown_strip_small"
-			position = { x= 22 y = 257 }
+			spriteType = "GFX_shield_crown_strip_medium2"
+			position = { x= 313 y = 41 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType =
 		{
 			name ="crown_2"
-			spriteType = "GFX_shield_crown_strip_small"
-			position = { x= 22 y = 292 }
+			spriteType = "GFX_shield_crown_strip_medium2"
+			position = { x= 404 y = 40 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "kingdom"
-			position = { x = 47 y = 273 }
+			position = { x = 284 y = 100 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 115
-			maxHeight = 20
-			format = left
+			maxWidth = 89
+			maxHeight = 60
+			format = center
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
 
 		instantTextBoxType = {
 			name = "duchy"
-			position = { x = 47 y = 306 }
+			position = { x = 374 y = 100 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 115
-			maxHeight = 20
-			format = left
+			maxWidth = 89
+			maxHeight = 60
+			format = center
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
 
-		textBoxType = {
-			name = "label_culture"
-			position = { x = 20 y = 331 }
-			textureFile = ""
-			font = "Arial12_black"
-			borderSize = {x = 0 y = 0}
-			text = "CULTURE"
-			maxWidth = 70
-			maxHeight = 14
-			format = left
-			Orientation = "UPPER_LEFT"
-			fixedsize = yes
-		}
-
+#		iconType = {
+#			name ="religion_icon"
+#			spriteType = "GFX_religion_icon_strip"
+#			position = { x= 256 y = 131 }
+#			Orientation = "UPPER_LEFT"
+#		}
+#		textBoxType = {
+#			name = "label_religion"
+#			position = { x = 288 y = 115 }
+#			textureFile = ""
+#			font = "Arial12_black"
+#			borderSize = {x = 0 y = 0}
+#			text = "RELIGION"
+#			maxWidth = 70
+#			maxHeight = 14
+#			format = left
+#			Orientation = "UPPER_LEFT"
+#			fixedsize = yes
+#		}
+	
+#		textBoxType = {
+#			name = "label_culture"
+#			position = { x = 288 y = 127 }
+#			textureFile = ""
+#			font = "Arial12_black"
+#			borderSize = {x = 0 y = 0}
+#			text = "CULTURE"
+#			maxWidth = 70
+#			maxHeight = 14
+#			format = left
+#			Orientation = "UPPER_LEFT"
+#			fixedsize = yes
+#		}
 		instantTextBoxType = {
 			name = "culture"
-			position = { x = 85 y = 332 }
+			position = { x = 363 y = 136 }
 			textureFile = ""
 			font = "Arial12_bold_black"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 80
+			maxWidth = 95
 			maxHeight = 14
 			format = right
-			Orientation = "UPPER_LEFT"
-			fixedsize = yes
-		}
-
-		textBoxType = {
-			name = "label_religion"
-			position = { x = 20 y = 345 }
-			textureFile = ""
-			font = "Arial12_black"
-			borderSize = {x = 0 y = 0}
-			text = "RELIGION"
-			maxWidth = 70
-			maxHeight = 14
-			format = left
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
 
 		instantTextBoxType = {
 			name = "religion"
-			position = { x = 85 y = 346 }
+			position = { x = 288 y = 136 }
 			textureFile = ""
 			font = "Arial12_bold_black"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 80
+			maxWidth = 95
 			maxHeight = 14
-			format = right
+			format = left
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
 
 		textBoxType = {
 			name = "label_supply_limit"
-			position = { x = 20 y = 359 }
+			position = { x = 288 y = 151 }
 			textureFile = ""
 			font = "Arial12_black"
 			borderSize = {x = 0 y = 0}
@@ -700,7 +739,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "supply_limit"
-			position = { x = 85 y = 360 }
+			position = { x = 378 y = 152 }
 			textureFile = ""
 			font = "Arial12_bold_black"
 			borderSize = {x = 0 y = 0}
@@ -711,14 +750,25 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
+		
+		iconType = {
+			name ="decadence_label"
+			spriteType = "GFX_decadence_revolt_label"
+			position = { x= 603 y = 137 }
+		}
+		iconType = {
+			name ="revolt_risk_icon"
+			spriteType = "GFX_ironman_revolt_icon"
+			position = { x= 605 y = 133 }
+		}
 		textBoxType = {
 			name = "label_revoltrisk"
-			position = { x = 20 y = 373 }
+			position = { x = 603 y = 140 }
 			textureFile = ""
 			font = "Arial12_black"
 			borderSize = {x = 0 y = 0}
-			text = "PLOTS_REVOLTRISK"
-			maxWidth = 70
+			text = ""
+			maxWidth = 20
 			maxHeight = 14
 			format = left
 			Orientation = "UPPER_LEFT"
@@ -726,71 +776,71 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "revoltrisk"
-			position = { x = 85 y = 374 }
+			position = { x = 617 y = 141 }
 			textureFile = ""
 			font = "Arial12_bold_black"
 			borderSize = {x = 0 y = 0}
 			text = "99%"
-			maxWidth = 80
-			maxHeight = 14
+			maxWidth = 40
+			maxHeight = 12
 			format = right
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
-		
-		iconType = {
-			name = "icon_miltech"
-			spriteType = "GFX_icon_miltech"
-			position = { x = 174 y = 312 }
-		}
-		instantTextBoxType = {
-			name = "miltech_value"
-			position = { x = 200 y = 321 }
-			textureFile = ""
-			font = "vic_18_black"
-			borderSize = {x = 0 y = 0}
-			text = "32"
-			maxWidth = 20
-			maxHeight = 20
-			format = left
-			Orientation = "UPPER_LEFT"
-			fixedsize = yes
-		}
-		
+############TECH icon		
 		iconType = {
 			name = "icon_ecotech"
 			spriteType = "GFX_icon_ecotech"
-			position = { x = 221 y = 313 }
+			position = { x = 607 y = 45 }
 		}
 		instantTextBoxType = {
 			name = "ecotech_value"
-			position = { x = 250 y = 321 }
+			position = { x = 639 y = 55 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}
 			text = "32"
 			maxWidth = 20
 			maxHeight = 20
-			format = left
+			format = centre
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
-		
+
 		iconType = {
-			name = "icon_cultech"
-			spriteType = "GFX_icon_cultech"
-			position = { x = 271 y = 313 }
+			name = "icon_miltech"
+			spriteType = "GFX_icon_miltech"
+			position = { x = 607 y = 74 } 
 		}
 		instantTextBoxType = {
-			name = "cultech_value"
-			position = { x = 300 y = 321 }
+			name = "miltech_value"
+			position = { x = 639 y = 84 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}
 			text = "32"
 			maxWidth = 20
 			maxHeight = 20
-			format = left
+			format = centre
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+		}
+	
+		iconType = {
+			name = "icon_cultech"
+			spriteType = "GFX_icon_cultech"
+			position = { x = 607 y = 103 }
+		}
+		instantTextBoxType = {
+			name = "cultech_value"
+			position = { x = 639 y = 113 }
+			textureFile = ""
+			font = "vic_18_black"
+			borderSize = {x = 0 y = 0}
+			text = "32"
+			maxWidth = 20
+			maxHeight = 20
+			format = centre
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
@@ -798,14 +848,14 @@ guiTypes = {
 		iconType = {
 			name ="icon_tax"
 			spriteType = "GFX_icon_wealth"
-			position = { x= 172 y = 263 }
+			position = { x= 282 y = 164 } #ex 172 263
 		}
 		
 		instantTextBoxType = {
 			name = "total_tax_value"
-			position = { x = 218 y = 269 }
+			position = { x = 307 y = 171 }
 			textureFile = ""
-			font = "vic_18_black"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "13/54"
 			maxWidth = 100
@@ -818,45 +868,63 @@ guiTypes = {
 		iconType = {
 			name ="icon_strait"
 			spriteType = "GFX_icon_strait"
-			position = { x= 300 y = 229 }
+			position = { x= 551 y = 207 }
 		}
 		
 		###### Siege interface 
 		windowType = {
 			name = "siege_window"
 			backGround=""
-			position = { x=0 y=0 }	
-			size = { x=370 y=512 }
+			position = { x=241 y=-340 }	
+			size = { x=444 y=151 }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder= ""
 			verticalBorder= ""
 			fullScreen = no
 			Orientation = "LOWER_LEFT"
-		
-			iconType =
-			{
+
+			iconType = {
+				name ="cadres_bg"
+				spriteType = "GFX_siege_cadres"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT" }
+				
+			iconType = {
+				name ="banniere_bg"
+				spriteType = "GFX_siege_banniere"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT" }
+						
+			iconType = {
 				name ="siege_bg"
 				spriteType = "GFX_combat_siege_bg"
-				position = { x= 6 y = 1 }
-				Orientation = "UPPER_LEFT"
-			}
-			guiButtonType =
-			{
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT" }
+
+			guiButtonType = {
 				name ="siege_shield"
 				quadTextureSprite = "GFX_shield_medium2"
-				position = { x= 2 y = -3 }
+				position = { x= 156 y = 27 }
 				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "label_siegename"
-				position = { x = 17 y = 7 }
+				position = { x = 0 y = 8 }
 				font = "vic_18"
 				text = ""	
-				maxWidth = 300
+				maxWidth = 444
 				maxHeight = 20
 				fixedsize = yes
 				format = centre
+			}
+
+			guiButtonType =	{
+				name = "assault"
+				position = {x= 267 y = 54 }
+				quadTextureSprite ="GFX_siege_assault_button"	
+				Orientation = "UPPER_LEFT"
+				clicksound = generic_click_02
 			}
 			
 			### attackers
@@ -876,7 +944,7 @@ guiTypes = {
 			guiButtonType =	{
 					name ="leader_portrait"
 					quadTextureSprite= "GFX_char_50"
-					position = { x= 15 y = 45 }
+					position = { x= 40 y = 47 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "CHARACTER_TOOLTIP"
 					pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
@@ -884,7 +952,7 @@ guiTypes = {
 			guiButtonType = {
 					name ="leader_portrait_frame"
 					quadTextureSprite = "GFX_charframe_50"
-					position = { x= 9 y = 38 }
+					position = { x= 34 y = 40 }
 					Orientation = "UPPER_LEFT"
 			}
 			
@@ -892,7 +960,7 @@ guiTypes = {
 			{
 				name ="leader_shield"
 				quadTextureSprite = "GFX_shield_small"
-				position = { x= 5 y = 74 }
+				position = { x= 32 y = 82}
 				Orientation = "UPPER_LEFT"
 			}
 			
@@ -907,25 +975,26 @@ guiTypes = {
 			iconType =
 			{
 				name ="morale"
-				spriteType = "GFX_combat_siege_morale"
-				position = { x= 71 y = 38 }
+				spriteType = "GFX_combat_siege_morale_att"
+				position = { x= 99 y = 127 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextBoxType = {
 				name = "light_infantry_total"
-				position = { x = 70 y = 85 }
+				position = { x = 97 y = 59 }
 				textureFile = ""
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
 				text = "2,457"	
-				maxWidth = 32
+				maxWidth = 34
 				maxHeight = 20	
 				format = centre
+				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "pikemen_total"
-				position = { x = 102 y = 85 }
+				position = { x = 97 y = 102 }
 				textureFile = ""
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
@@ -933,10 +1002,11 @@ guiTypes = {
 				maxWidth = 32
 				maxHeight = 20	
 				format = centre
+				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "archers_total"
-				position = { x = 134 y = 85 }
+				position = { x = 130 y = 102 }
 				textureFile = ""
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
@@ -944,10 +1014,11 @@ guiTypes = {
 				maxWidth = 32
 				maxHeight = 20	
 				format = centre
+				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "heavy_infantry_total"
-				position = { x = 166 y = 85 }
+				position = { x = 163 y = 102 }
 				textureFile = ""
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
@@ -955,10 +1026,11 @@ guiTypes = {
 				maxWidth = 32
 				maxHeight = 20	
 				format = centre
+				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "light_cavalry_total"
-				position = { x = 198 y = 85 }
+				position = { x = 196 y = 101 }
 				textureFile = ""
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
@@ -966,10 +1038,11 @@ guiTypes = {
 				maxWidth = 32
 				maxHeight = 20	
 				format = centre
+				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "special_troops_total"
-				position = { x = 262 y = 85 }
+				position = { x = 229 y = 59 }
 				textureFile = ""
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
@@ -977,10 +1050,11 @@ guiTypes = {
 				maxWidth = 32
 				maxHeight = 20	
 				format = centre
+				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "knights_total"
-				position = { x = 230 y = 85 }
+				position = { x = 229 y = 102 }
 				textureFile = ""
 				font = "Arial12"
 				borderSize = {x = 0 y = 0}
@@ -988,60 +1062,61 @@ guiTypes = {
 				maxWidth = 32
 				maxHeight = 20	
 				format = centre
+				Orientation = "UPPER_LEFT"
 			}
 			
 
 			iconType = {
 				name ="light_infantry"
 				spriteType = "GFX_unitpanel_unitstrip_small"
-				position = { x= 73 y = 58 }
+				position = { x= 100 y = 32 }
 				Orientation = "UPPER_LEFT"
 			}
 			iconType = {
 				name ="pikemen"
 				spriteType = "GFX_unitpanel_unitstrip_small"
-				position = { x= 105 y = 58 }
+				position = { x= 100 y = 74 }
 				Orientation = "UPPER_LEFT"
 			}
 			iconType = {
 				name ="archers"
 				spriteType = "GFX_unitpanel_unitstrip_small"
-				position = { x= 137 y = 58 }
+				position = { x= 133 y = 74 }
 				Orientation = "UPPER_LEFT"
 			}
 			iconType = {
 				name ="heavy_infantry"
 				spriteType = "GFX_unitpanel_unitstrip_small"
-				position = { x= 169 y = 58 }
+				position = { x= 166 y = 74 }
 				Orientation = "UPPER_LEFT"
 			}
 			iconType = {
 				name ="light_cavalry"
 				spriteType = "GFX_unitpanel_unitstrip_small"
-				position = { x= 201 y = 58 }
+				position = { x= 199 y = 74 }
 				Orientation = "UPPER_LEFT"
 			}
 			iconType = {
 				name ="special_troops"
 				spriteType = "GFX_unitpanel_specialtroops_smallstrip"
-				position = { x= 265 y = 58 }
+				position = { x= 232 y = 31 }
 				Orientation = "UPPER_LEFT"
 			}
 			iconType = {
 				name ="knights"
 				spriteType = "GFX_unitpanel_unitstrip_small"
-				position = { x= 233 y = 58 }
+				position = { x= 232 y = 74 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextBoxType = {
 				name = "label_attackers"
-				position = { x = 76 y = 38 }
+				position = { x = 102 y = 130 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "SIEGE_ATTACKERS"	
-				maxWidth = 150
+				maxWidth = 118
 				maxHeight = 24	
 				fixedsize = yes
 				format = left
@@ -1049,12 +1124,12 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "units_total"
-				position = { x = 200 y = 38 }
+				position = { x = 100 y = 130 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "17,689"	
-				maxWidth = 70
+				maxWidth = 116
 				maxHeight = 24	
 				format = right
 				allwaystransparent = yes
@@ -1062,19 +1137,22 @@ guiTypes = {
 			
 			iconType = {
 				name ="to_few_men"
-				spriteType = "GFX_icon_siege_tofewmen"
-				position = { x= 273 y = 36 }
+				spriteType = "GFX_icon_siege_tofewmen_arko"
+				#position = { x= 99 y = 125 }
+				position = { x= 267 y = 54 }
 				Orientation = "UPPER_LEFT"
-			}
+			}			
 
 		}
 
-			guiButtonType =	{
-				name = "assault"
-				position = {x= 303 y = -2 }
-				quadTextureSprite ="GFX_siege_assault_button"	
+
+
+
+			iconType = {
+				name ="the_wall"
+				spriteType = "GFX_buildview_fort_icon"
+				position = { x= 306 y = 60 }
 				Orientation = "UPPER_LEFT"
-				clicksound = generic_click_02
 			}
 
 			
@@ -1083,7 +1161,7 @@ guiTypes = {
 			windowType = {
 				name = "siege_defenders"
 				backGround=""
-				position = { x=0 y=69 }	
+				position = { x=0 y=0 }	
 				size = { x=370 y=512 }
 				moveable = 0
 				dontRender = ""
@@ -1095,7 +1173,7 @@ guiTypes = {
 			guiButtonType =	{
 					name ="leader_portrait"
 					quadTextureSprite= "GFX_char_50"
-					position = { x= 15 y = 45 }
+					position = { x= 353 y = 47 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "CHARACTER_TOOLTIP"
 					pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
@@ -1103,7 +1181,7 @@ guiTypes = {
 			guiButtonType = {
 					name ="leader_portrait_frame"
 					quadTextureSprite = "GFX_charframe_50"
-					position = { x= 9 y = 38 }
+					position = { x= 347 y = 40 }
 					Orientation = "UPPER_LEFT"
 			}
 			
@@ -1111,7 +1189,7 @@ guiTypes = {
 			{
 				name ="leader_shield"
 				quadTextureSprite = "GFX_shield_small"
-				position = { x= 5 y = 74 }
+				position = { x= 345 y = 82 }
 				Orientation = "UPPER_LEFT"
 			}
 			
@@ -1123,58 +1201,72 @@ guiTypes = {
 			#	Orientation = "UPPER_LEFT"
 			#}
 			
-			iconType =
-			{
+			iconType = {
 				name ="morale"
-				spriteType = "GFX_combat_siege_morale"
-				position = { x= 71 y = 38 }
-				Orientation = "UPPER_LEFT"
-			}
-			
+				spriteType = "GFX_combat_siege_morale_def"
+				position = { x= 223 y = 127 }
+				Orientation = "UPPER_LEFT" }
+				
+			iconType = {
+				name ="label_arko_small_1"
+				spriteType = "GFX_label_arko_small"
+				position = { x= 264 y = 30 }
+				Orientation = "UPPER_LEFT" }
+				
+			iconType = {
+				name ="label_arko_small_2"
+				spriteType = "GFX_label_arko_small"
+				position = { x= 264 y = 87 }
+				Orientation = "UPPER_LEFT" }
+				
 			iconType = {
 				name ="garrison_icon"
 				spriteType = "GFX_combat_siege_end_garrison"
-				position = { x= 81 y = 65 }
+				position = { x= 275 y = 32 }
 				Orientation = "UPPER_LEFT"
 			}
 			iconType = {
 				name ="levy_icon"
 				spriteType = "GFX_combat_siege_end_levy"
-				position = { x= 195 y = 65 }
+				position = { x= 275 y = 89 }
 				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "garrison_amount"
-				position = { x = 100 y = 69 }
+				position = { x = 285 y = 38 }
 				textureFile = ""
 				font = "vic_18_black"
+				#font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "2,457"	
-				maxWidth = 60
+				maxWidth = 40
 				maxHeight = 20	
 				format = right
+				Orientation = "UPPER_LEFT"
 			}
 			instantTextBoxType = {
 				name = "levy_amount"
-				position = { x = 212 y = 69 }
+				position = { x = 285 y = 94 }
 				textureFile = ""
 				font = "vic_18_black"
+				#font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "2,457"	
-				maxWidth = 60
+				maxWidth = 40
 				maxHeight = 20	
 				format = right
+				Orientation = "UPPER_LEFT"
 			}
 			
 			
 			instantTextBoxType = {
 				name = "label_defenders"
-				position = { x = 76 y = 38 }
+				position = { x = 226 y = 130 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "SIEGE_DEFENDERS"	
-				maxWidth = 150
+				maxWidth = 118
 				maxHeight = 24	
 				fixedsize = yes
 				format = left
@@ -1182,12 +1274,12 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "units_total"
-				position = { x = 200 y = 38 }
+				position = { x = 224 y = 130 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "17,689"	
-				maxWidth = 70
+				maxWidth = 116
 				maxHeight = 24	
 				format = right
 				allwaystransparent = yes
@@ -1198,8 +1290,8 @@ guiTypes = {
 		### END OF SIEGE
 		
 		guiButtonType = {
-			name = "province_toggle_siege"
-			position = { x= 307 y = 368 }
+			name = "province_toggle_siege" #siegetoggler
+			position = { x= 681 y = 237 }
 			quadTextureSprite ="GFX_province_toggle_siege"
 			Orientation = "UPPER_LEFT"
 			clicksound = generic_click_04
@@ -1232,7 +1324,7 @@ guiTypes = {
 		name = "pv_tempmod_entry"
 		backGround =""
 		position = { x=0 y=0 }
-		size = { x=28 y=28 }
+		size = { x=48 y=48 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = "0"
@@ -1242,6 +1334,7 @@ guiTypes = {
 		iconType =
 		{
 			name ="strip_temp_mods"
+#			spriteType = "GFX_modifier_icons_arko"
 			spriteType = "GFX_modifier_icons"
 			position = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -1286,22 +1379,22 @@ guiTypes = {
 	
 	positionType = {
 		name = "capital_position"
-		position = { x = 193 y = 86 }
+		position = { x = 464 y = 58 } 
 	}
 	
 	
-	### CHOOSE SETTLEMENT
+	### CHOOSE SETTLEMENT #unused it seems
 	eu3dialogtype = {
 		name = "ChooseSettlementDialog"
 		backGround="Background"
-		position = { x=-260 y=-190 }
+		position = { x=900 y=-1030 }
 		size = { x=520 y=380 }
-		moveable = 1
+		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullScreen = no
-		Orientation = "CENTER"
+		Orientation = "LOWER_LEFT"
 		
 		guiButtonType = {
 			name = "Background"	
@@ -1373,7 +1466,7 @@ guiTypes = {
 		name = "settlement_entry"
 		backGround =""
 		position = { x=0 y=0 }
-		size = { x=109 y=109 }
+		size = { x=110 y=110 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = "0"
@@ -1390,91 +1483,89 @@ guiTypes = {
 		iconType = {
 			name = "settlement_owner_frame"
 			spriteType = "GFX_province_settlement_owner_frame"
-			position = { x= 14 y = 11 }
+			position = { x= 7 y = -1 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
 			name ="settlement_placeholder"
 			quadTextureSprite ="GFX_settlement_castle"
-			position = { x = 22 y = 19 }
+			position = { x = 11 y = 7 }
 			Orientation = "UPPER_LEFT"
 			clicksound = click
-			scale = 0.75
 		}
-
-		guiButtonType = {
-			name ="holder_shield"
-			quadTextureSprite = "GFX_shield_medium2"
-			position = { x = -2 y = -1 }
-			Orientation = "UPPER_LEFT"
-		}
-		
+		#SHIELDS
 		guiButtonType = {
 			name ="control_shield"
 			quadTextureSprite = "GFX_shield_medium2"
-			position = { x = 32 y = -1 }
+			position = { x = 62 y = 61 }
 			Orientation = "UPPER_LEFT"
 		}
-
+		guiButtonType = {
+			name ="holder_shield"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 25 y = -32 } #ex x32 y-1
+			Orientation = "UPPER_LEFT"
+		}		
 		guiButtonType = {
 			name ="realm_shield"
 			quadTextureSprite = "GFX_shield_medium2"
-			position = { x = 67 y = -1 }
+			position = { x = 71 y = -24 }
 			Orientation = "UPPER_LEFT"
-		}	
+		}
 		
+		#BARS
 		iconType = {
-			name ="progress_bg1"
+			name ="progress_bg1" #garrison bar #background
 			spriteType = "GFX_levy_progress_bg"
-			position = { x= 16 y = 90 }
+			position = { x= 16 y = 109 } #y+6
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
-			name ="progress_bg2"
+			name ="progress_bg2" #levy bar #background
 			spriteType = "GFX_levy_progress_bg"
-			position = { x= 68 y = 90 }
+			position = { x= 70 y = 109 } #y+6
 			Orientation = "UPPER_LEFT"
 		}
-		iconType = {
+		iconType = { #garrison bar
 			name ="garrison_size"
 			spriteType = "GFX_levyprogress_1"
-			position = { x= 19 y = 95 }
+			position = { x= 19 y = 114 } #y+6
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType = {
-			name ="levy_size"
+			name ="levy_size" #levy bar
 			spriteType = "GFX_levyprogress_3"
-			position = { x= 72 y = 95 }
+			position = { x= 74 y = 114 } #y+6
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType = {
-			name ="ourlevy_size"
+			name ="ourlevy_size" #levy bar
 			spriteType = "GFX_levyprogress_2"
-			position = { x= 72 y = 95 }
+			position = { x= 74 y = 114 } #y+6
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
-			name = "garrison_icon"
+			name = "garrison_icon" #garrison bar
 			spriteType = "GFX_combat_siege_end_garrison"
-			position = { x= 1 y = 85 }
+			position = { x= 1 y = 105 } #y+7
 			Orientation = "UPPER_LEFT"
 		}
-		iconType = {
-			name = "levy_icon"
+		iconType = { 
+			name = "levy_icon" #levy bar
 			spriteType = "GFX_combat_siege_end_levy"
-			position = { x= 52 y = 84 }
+			position = { x= 52 y = 104 } #y+7
 			Orientation = "UPPER_LEFT"
 		}
 		
-		OverlappingElementsBoxType = {
+		OverlappingElementsBoxType = { #settlement modifier
 			name = "modifiers"
-			position = { x = -9 y = 66 }
-			size = { x = 104 y = 50 }
-			format = right
+			position = { x = 10 y = 78 } #ex y=66
+			size = { x = 70 y = 118 }
+			format = left
 			spacing = 0
 			Orientation = "UPPER_LEFT"
 		}
@@ -1504,7 +1595,7 @@ guiTypes = {
 		name = "capital_entry"
 		backGround =""
 		position = { x=0 y=0 }
-		size = { x=111 y=111 }
+		size = { x=110 y=110 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = "0"
@@ -1525,25 +1616,23 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			clicksound = click
 		}
-
-		guiButtonType = {
-			name ="holder_shield"
-			quadTextureSprite = "GFX_shield_medium2"
-			position = { x = 1 y = -4 }
-			Orientation = "UPPER_LEFT"
-		}
-		
+		#SHIELDS
 		guiButtonType = {
 			name ="control_shield"
 			quadTextureSprite = "GFX_shield_medium2"
-			position = { x = 42 y = -4 }
+			position = { x = 71 y = 69 }
 			Orientation = "UPPER_LEFT"
 		}
-
+		guiButtonType = {
+			name ="holder_shield"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 35 y = -29 }
+			Orientation = "UPPER_LEFT"
+		}
 		guiButtonType = {
 			name ="realm_shield"
 			quadTextureSprite = "GFX_shield_medium2"
-			position = { x = 83 y = -4 }
+			position = { x = 88 y = -17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -1595,9 +1684,9 @@ guiTypes = {
 		
 		OverlappingElementsBoxType = {
 			name = "modifiers"
-			position = { x = 16 y = 86 }
-			size = { x = 100 y = 50 }
-			format = right
+			position = { x = 18 y = 86 }
+			size = { x = 70 y = 118 }
+			format = left
 			spacing = 0
 			Orientation = "UPPER_LEFT"
 		}
@@ -1627,6 +1716,7 @@ guiTypes = {
 			position = { x= 6 y = 20 }
 			Orientation = "UPPER_LEFT"
 		}
+		
 		guiButtonType = {
 			name = "shield"
 			position = { x= 0 y = 0 }

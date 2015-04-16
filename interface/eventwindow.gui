@@ -162,12 +162,12 @@ guiTypes = {
 		instantTextBoxType = 
 		{
 			name = "Description"
-			position = { x = 41 y = 258 }
+			position = { x = 31 y = 258 } #-10x
 			textureFile = ""
 			font = "vic_22_black"
 			borderSize = {x = 0 y = 0}
 			text = "Long text here!"	
-			maxWidth = 416
+			maxWidth = 441 #+10x à gauche +15x à droite
 			maxHeight = 140	
 			format = centre
 			fixedsize = yes
@@ -387,21 +387,21 @@ guiTypes = {
 		{
 			name ="event_extension_1"
 			spriteType = "GFX_event_normal_extension"
-			position = { x= 1 y = 537 }
+			position = { x= 1 y = 436 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType =
 		{
 			name ="event_extension_2"
 			spriteType = "GFX_event_normal_extension"
-			position = { x= 1 y = 577 }
+			position = { x= 1 y = 476 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType =
 		{
 			name ="event_extension_3"
 			spriteType = "GFX_event_normal_extension"
-			position = { x= 1 y = 617 }
+			position = { x= 1 y = 516 }
 			Orientation = "UPPER_LEFT"
 		}
 

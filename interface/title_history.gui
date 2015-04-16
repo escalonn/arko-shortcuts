@@ -67,20 +67,20 @@ guiTypes = {
 		guiButtonType = {
 			name ="portrait"
 			quadTextureSprite = "GFX_char_34"
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = 9 }
 			pdx_tooltip = "CHARACTER_TOOLTIP"
 			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
 		}
 		guiButtonType = {
 			name ="portrait_frame"
 			quadTextureSprite = "GFX_charframe_34"
-			position = { x= -5 y = 1 }
+			position = { x= -5 y = 3 }
 			Orientation = "UPPER_LEFT"
 		}
 		guiButtonType = {
 			name = "portrait_dead"
 			quadTextureSprite = "GFX_overlay_char_dead_small"
-			position = { x = 20 y = 21 }
+			position = { x = 20 y = 23 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "CHARACTER_DEAD_TOOLTIP"
 		}
@@ -88,7 +88,7 @@ guiTypes = {
 		instantTextBoxType = {
 			position = { x=45 y =7}
 			name = "text"
-			font = "Arial12_black"
+			font = "vic_22_black"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 235
 			maxHeight = 40
@@ -105,15 +105,15 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			position = { x=45 y =27}
+			position = { x=45 y =29}
 			name = "acquisition"
-			font = "Arial12_black"
+			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 235
 			maxHeight = 40
 			text = "Hello world!"	
 			orientation = "UPPER_LEFT"
-			format = left
+			format = center
 		}
 	}
 }

@@ -32,7 +32,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "+"
 				buttonFont = "Main_14_black"
-				shortcut = "e"
+				shortcut = "+"
 		}
 
 		guiButtonType = 
@@ -45,7 +45,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "-"
 				buttonFont = "Main_14_black"
-				shortcut = "q"
+				shortcut = "-"
 		}
 
 		guiButtonType = 
@@ -84,7 +84,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "^"
 				buttonFont = "Main_14_black"
-				shortcut = "w"
+				shortcut = "8"
 		}
 
 		guiButtonType = 
@@ -97,7 +97,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "v"
 				buttonFont = "Main_14_black"
-				shortcut = "s"
+				shortcut = "2"
 		}
 
 		guiButtonType = 
@@ -110,7 +110,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = ">"
 				buttonFont = "Main_14_black"
-				shortcut = "d"
+				shortcut = "6"
 		}
 
 		guiButtonType = 
@@ -123,7 +123,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "<"
 				buttonFont = "Main_14_black"
-				shortcut = "a"
+				shortcut = "4"
 		}
 
 		guiButtonType = 
@@ -168,14 +168,14 @@ guiTypes = {
 		guiButtonType = 
 		{
 				name = "nudge_save"
-				position = { x = 150 y = 160 }
+				position = { x = 200 y = 160 }
 				quadTextureSprite ="button_type_6"
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
 				buttonText = "save"
 				buttonFont = "Main_14_black"
-				shortcut = "-"
+				shortcut = ""
 		}
 
 		textBoxType = 
@@ -212,7 +212,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "next"
 				buttonFont = "Main_14_black"
-				shortcut = "2"
+				shortcut = ""
 		}
 
 		guiButtonType = 
@@ -225,7 +225,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "prev"
 				buttonFont = "Main_14_black"
-				shortcut = "1"
+				shortcut = ""
 		}
 
 	

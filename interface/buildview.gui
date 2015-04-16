@@ -152,11 +152,11 @@ guiTypes = {
 		}
 
 		editBoxType = {
-			name = "title_label"
+			name = "title_label" #nom Domaine
 			position = { x = 169 y = 7 }
 			size = { x = 220 y = 32 }
 			textureFile = ""
-			font = "vic_22"
+			font = "ark_22"
 			borderSize = { x = 4 y = 4 }
 			text = ""
 		}
@@ -205,8 +205,8 @@ guiTypes = {
 		
 		guiButtonType = {
 			name ="settlement_shield"
-			quadTextureSprite = "GFX_shield_medium2"
-			position = { x= 120 y = 6 }
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x= 32 y = 105 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -378,7 +378,7 @@ guiTypes = {
 			name = "building_list"
 			position = { x = 21 y = 167 }
 			backGround=""
-			size = { x=414 y = 350}
+			size = { x=414 y = 420}
 			spacing = 1
 			scrollbartype = "standardlistbox_slider"
 			borderSize = {x = 0 y = 0}
@@ -431,19 +431,19 @@ guiTypes = {
 		
 		iconType = {
 			name ="icon_level"
-			spriteType = "GFX_buildview_level"
-			position = { x= 8 y = 3 }
+			spriteType = "GFX_buildview_level_arko"
+			position = { x= 3 y = 4 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 35 y = 8 }
+			position = { x = 27 y = 8 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "PW_UNIT_TYPE"
-			maxWidth = 185
+			maxWidth = 260
 			maxHeight = 32
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
@@ -451,7 +451,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "cost"
-			position = { x = 255 y = 8 }
+			position = { x = 283 y = 8 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -465,19 +465,19 @@ guiTypes = {
 		iconType = {
 			name ="icon_gold"
 			spriteType = "GFX_icon_gold_small"
-			position = { x= 307 y = 9 }
+			position = { x= 335 y = 9 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name ="icon_prestige"
 			spriteType = "GFX_icon_prestige_small"
-			position = { x= 307 y = 9 }
+			position = { x= 335 y = 9 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
 			name = "buildbutton"
-			position = { x=224 y = 0 }
+			position = { x=265 y = 0 }
 			quadTextureSprite ="GFX_buildview_buildbutton"
 			clicksound = generic_click_04
 		}
@@ -485,13 +485,13 @@ guiTypes = {
 		iconType = {
 			name ="icon_cantbuildreason"
 			spriteType = "GFX_buildview_cantbuildicon"
-			position = { x= 230 y = 3 }
+			position = { x= 268 y = 3 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		instantTextBoxType = {
 			name = "buildtime"
-			position = { x = 340 y = 8 }
+			position = { x = 342 y = 8 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -504,7 +504,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "status_text"
-			position = { x = 265 y = 8 }
+			position = { x = 255 y = 8 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -518,7 +518,7 @@ guiTypes = {
 		iconType = {
 			name ="status_icon"
 			spriteType = "GFX_buildview_status_strip"
-			position = { x= 402 y = 6 }
+			position = { x= 392 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
 	}
@@ -529,8 +529,8 @@ guiTypes = {
 	windowType = {
 		name = "build_settlement_view"
 		backGround ="build_settlement_bg_area"
-		position = { x=355 y=-550 }
-		size = { x=512 y=512 }
+		position = { x=23 y=-710 }	
+		size = { x=280 y=500 }
 		moveable = 1
 		dontRender = ""
 		horizontalBorder = "0"
@@ -545,7 +545,19 @@ guiTypes = {
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
+		iconType = {
+				name ="buildnew_fond_bg"
+				spriteType = "GFX_build_settlement_fond_arko"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT" }
+				
+			iconType = {
+				name ="buildnew_banniere_bg"
+				spriteType = "GFX_build_settlement_banniere_arko"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT" }
+				
 		iconType =
 		{
 			name ="build_settlement_bg"
@@ -554,9 +566,10 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
+		
 		instantTextBoxType = {
 			name = "headline"
-			position = { x = 90 y = 11 }
+			position = { x = 0 y = 7 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
@@ -568,17 +581,17 @@ guiTypes = {
 		
 		guiButtonType =	{
 			name = "button_close"
-			position = { x=441 y=15 }
+			position = { x=257 y=5 }
 			quadTextureSprite ="GFX_main_close_button"	
 			shortcut = "ESCAPE"
 		}
 		
 		listboxType = {
 			name = "settlement_list"
-			position = { x = 15 y = 60 }
+			position = { x = 0 y = 34 }
 			backGround=""
-			size = { x=320 y = 512}
-			spacing = 1
+			size = { x=280 y = 306}
+			spacing = 0
 			scrollbartype = "standardlistbox_slider"
 			borderSize = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -590,17 +603,18 @@ guiTypes = {
 		name = "build_settlement_entry"
 		backGround =""
 		position = { x=0 y=0 }
-		size = { x=320 y=62 }
+		size = { x=280 y=62 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
 		verticalBorder = ""
 		fullScreen = no
-		
+
+				
 		guiButtonType = {
 			name = "build_banner"
-			position = { x=287 y = -2}
-			quadTextureSprite ="GFX_standard_button_112"
+			position = { x=240 y = 2}
+			quadTextureSprite ="GFX_buildview_buildbutton"
 			buttonText = "SM_BUILD"
 			buttonFont = "vic_18"
 			clicksound = generic_click_04
@@ -610,32 +624,34 @@ guiTypes = {
 		{
 			name ="settlement_type"
 			spriteType = "GFX_settlement_castle"
-			position = { x= 27 y = 1 }
+			position = { x= 27 y = 6 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 		}
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 99 y = 2 }
+			position = { x = 75 y = 8 }
 			textureFile = ""
 			font = "vic_22_black"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 170
-			maxHeight = 20
+			maxWidth = 168
+			maxHeight = 27
+			format = centre
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
 		
 		instantTextBoxType = {
 			name = "buildtime"
-			position = { x = 99 y = 34 }
+			position = { x = 75 y = 37 }
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 0 y = 0}
+			borderSize = {x = 15 y = 0}
 			text = ""
-			maxWidth = 170
+			maxWidth = 168
 			maxHeight = 20
+			format = left
 			fixedsize = yes
 			Orientation = "UPPER_LEFT"
 		}
@@ -643,18 +659,18 @@ guiTypes = {
 		{
 			name ="icon_wealth"
 			spriteType = "GFX_icon_wealth"
-			position = { x= 376 y = 32 }
+			position = { x= 230 y = 33 }
 			Orientation = "UPPER_LEFT"
-			scale = 0.75
+			#scale = 0.75
 		}
 		instantTextBoxType = {
 			name = "cost"
-			position = { x = 293 y = 34 }
+			position = { x = 60 y = 37 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 80
+			maxWidth = 168
 			maxHeight = 20
 			format = right
 			Orientation = "UPPER_LEFT"

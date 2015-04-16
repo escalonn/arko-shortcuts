@@ -38,21 +38,21 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "dlc_tab"
-			position = { x = 179 y = 98 }
-			quadTextureSprite ="GFX_charview_tab"	
+			position = { x = 179 y = 95 }
+			quadTextureSprite ="GFX_lobby_tab_blue"	
 			Orientation = "UPPER_LEFT"
 		}
 
 		guiButtonType = {
 			name = "mod_tab"
-			position = { x = 304 y = 98 }
-			quadTextureSprite ="GFX_charview_tab"	
+			position = { x = 304 y = 95 }
+			quadTextureSprite ="GFX_lobby_tab_blue"	
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name = "dlc_label"
-			position = { x = 183 y = 109 }
+			position = { x = 183 y = 105 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -67,7 +67,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "mod_label"
-			position = { x = 308 y = 109 }
+			position = { x = 308 y = 105 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}

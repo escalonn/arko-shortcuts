@@ -3,7 +3,7 @@ guiTypes = {
 	eu3dialogtype = {
 		name = "focus_view"
 		backGround ="background_fv"
-		position = { x=545 y=100 }
+		position = { x=571 y=51 }
 		size = { x=300 y=300 }
 		moveable = 1
 		dontRender = ""

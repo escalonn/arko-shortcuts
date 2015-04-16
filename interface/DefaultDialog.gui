@@ -560,7 +560,7 @@ guiTypes = {
 		backGround = "Background"
 		position = { x = -564 y = -406 }	
 		size = { x = 1128 y = 812 }
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder = ""
 		verticalBorder = ""
@@ -576,24 +576,32 @@ guiTypes = {
 			spriteType = "GFX_chronicle_bg"
 			position = { x = 0 y = 0 }
 		}
+
+		#iconType = { #label bg
+		#	name ="chronicle_label_ARKO"
+		#	spriteType = "GFX_chronicle_label_ARKO"
+		#	position = { x = 69 y = 93 }
+		#	Orientation = "UPPER_LEFT"
+		#}
 		
-		instantTextBoxType = {
+		instantTextBoxType = { #text label
 			name = "chronicle_label"
-			position = { x = 96 y = 25 }
+			position = { x = 69 y = 95 }
 			textureFile = ""
-			font = "vic_22"
+			#font = "vic_22_black"
+			font = "vic_36_black"
 			borderSize = { x = 0 y = 0 }
-			maxWidth = 935
-			maxHeight = 20	
+			maxWidth = 480
+			maxHeight = 120	
 			format = centre
 			fixedsize = yes
 		}
 		
 		listboxType = {
 			name = "left_list"
-			position = { x = 86 y = 88 }
+			position = { x = 86 y = 163 }
 			backGround = ""
-			size = { x = 500 y = 598}
+			size = { x = 500 y = 523}
 			spacing = 1
 			borderSize = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -601,9 +609,9 @@ guiTypes = {
 		
 		listboxType = {
 			name = "right_list"
-			position = { x = 598 y = 88 }
+			position = { x = 598 y = 93 }
 			backGround = ""
-			size = { x = 500 y = 598 }
+			size = { x = 500 y = 593 }
 			spacing = 1
 			borderSize = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -637,12 +645,14 @@ guiTypes = {
 			name = "PreviousPage"
 			position = { x = 49 y = 628 }
 			quadTextureSprite = "GFX_chronicle_previous_page"
+			priority_shortcut = "<"
 		}
 		
 		guiButtonType = {
 			name = "NextPage"
 			position = { x = 987 y = 628 }
 			quadTextureSprite = "GFX_chronicle_next_page"
+			priority_shortcut = ">"
 		}
 	}
 	
@@ -823,8 +833,8 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="portrait_frame"
-			quadTextureSprite = "GFX_charframe_50"
-			position = { x= 388 y = 0 }
+			quadTextureSprite = "GFX_charframe_50_chronicle"
+			position = { x= 385 y = -3 }
 			pdx_tooltip = "CHARACTER_TOOLTIP"
 			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
 		}		

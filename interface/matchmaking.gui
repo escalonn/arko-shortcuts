@@ -334,13 +334,13 @@ guiTypes = {
 		checkboxType = {
 			name = "servers_tab"
 			position = { x = 40 y = 61 }
-			quadTextureSprite = "GFX_charview_tab"	
+			quadTextureSprite = "GFX_lobby_tab_blue"	
 		}
 
 		checkboxType = {
 			name = "community_tab"
 			position = { x= 165 y = 61 }
-			quadTextureSprite = "GFX_charview_tab"
+			quadTextureSprite = "GFX_lobby_tab_blue"
 		}
 
 		instantTextBoxType = {

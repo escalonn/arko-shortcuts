@@ -580,7 +580,7 @@ guiTypes = {
 		iconType = {
 			name = "dynatree_shield_deco"
 			spriteType = "GFX_realmtree_shield_bg"
-			position = { x= 13 y = 46 }
+			position = { x= 13 y = 51 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
