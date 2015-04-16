@@ -53,13 +53,13 @@ guiTypes = {
 			name = "button_close"
 			position = { x = 661 y = 9 }
 			quadTextureSprite ="GFX_main_close_button"
-			shortcut = "ESCAPE"
 		}
 		
 		guiButtonType =	{
 			name = "button_raise_levy"
 			position = { x=602 y=160 }
 			quadTextureSprite ="GFX_military_troop_strip_1"	
+			shortcut = "z"
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -67,6 +67,7 @@ guiTypes = {
 			name = "button_raise_ships"
 			position = { x=635 y=160 }
 			quadTextureSprite ="GFX_military_troop_strip_1"	
+			shortcut = "c"	
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -924,6 +925,7 @@ guiTypes = {
 				position = {x= 267 y = 54 }
 				quadTextureSprite ="GFX_siege_assault_button"	
 				Orientation = "UPPER_LEFT"
+				shortcut = "c"
 				clicksound = generic_click_02
 			}
 			
@@ -1294,6 +1296,7 @@ guiTypes = {
 			position = { x= 681 y = 237 }
 			quadTextureSprite ="GFX_province_toggle_siege"
 			Orientation = "UPPER_LEFT"
+			shortcut = "z"
 			clicksound = generic_click_04
 		}
 		
