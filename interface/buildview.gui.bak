@@ -656,7 +656,7 @@ guiTypes = {
 		}
 		iconType =
 		{
-			name ="icon_cost"
+			name ="icon_wealth"
 			spriteType = "GFX_icon_wealth"
 			position = { x= 376 y = 32 }
 			Orientation = "UPPER_LEFT"
