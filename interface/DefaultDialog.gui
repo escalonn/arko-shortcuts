@@ -576,13 +576,6 @@ guiTypes = {
 			spriteType = "GFX_chronicle_bg"
 			position = { x = 0 y = 0 }
 		}
-
-		#iconType = { #label bg
-		#	name ="chronicle_label_ARKO"
-		#	spriteType = "GFX_chronicle_label_ARKO"
-		#	position = { x = 69 y = 93 }
-		#	Orientation = "UPPER_LEFT"
-		#}
 		
 		instantTextBoxType = { #text label
 			name = "chronicle_label"
@@ -821,6 +814,7 @@ guiTypes = {
 			format = left
 		}
 		
+	
 		guiButtonType =
 		{
 			name ="portrait"
@@ -829,12 +823,19 @@ guiTypes = {
 			pdx_tooltip = "CHARACTER_TOOLTIP"
 			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
 		}
+		iconType = {
+			name ="portrait_frame_deco"
+			spriteType ="GFX_charframe_50_chronicle"
+			position = { x= 385 y = -6 }
+			#pdx_tooltip = "CHARACTER_TOOLTIP"
+			#pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
+		}
 		
 		guiButtonType =
 		{
 			name ="portrait_frame"
-			quadTextureSprite = "GFX_charframe_50_chronicle"
-			position = { x= 385 y = -3 }
+			quadTextureSprite = "GFX_charframe_50"
+			position = { x= 388 y = -3 }
 			pdx_tooltip = "CHARACTER_TOOLTIP"
 			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
 		}		
@@ -856,14 +857,14 @@ guiTypes = {
 		iconType = {
 			name ="image_frame"
 			spriteType = "GFX_chronicle_image_frame"
-			position = { x= 71 y = 0 }
+			position = { x= 32 y = 0 }
 		}
 		iconType = {
 			name ="chronicle_picture"
 			spriteType = "GFX_evt_throne_room"
-			position = { x= 111 y = 13 }
+			position = { x= 72 y = 14 }
 			Orientation = "UPPER_LEFT"
-			scale = 0.5
+			scale = 0.70
 		}	
 	}
 	

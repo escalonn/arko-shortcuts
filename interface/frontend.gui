@@ -1,6 +1,6 @@
 guiTypes = {
 
-	### CHAPTER ENTRY (NEW)
+	### CHAPTER ENTRY (NEW) TUTO
 	windowType = {
 		name ="tutorial_chapter_entry"
 		backGround=""
@@ -77,7 +77,13 @@ guiTypes = {
 		verticalBorder= ""
 		fullScreen = no
 		Orientation = "CENTER"
-		
+
+		iconType ={
+			name ="bg_blank"
+			spriteType = "GFX_era_bg_blank"
+			position = { x=-948 y=-535 }
+			Orientation = "CENTER"
+		}			
 		iconType ={
 			name ="bg"
 			spriteType = "GFX_pick_era_bg"
@@ -452,7 +458,7 @@ guiTypes = {
 			text = ""
 			maxWidth = 105
 			maxHeight = 50
-			format = center
+			format = centre
 		}
 	}
 	
@@ -474,7 +480,7 @@ guiTypes = {
 		name ="country_selection_panel"
 		backGround= "Background"
 		position = { x=0 y =0}	
-		size = { x=320 y = 960}
+		size = { x=320 y = 955}
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -1141,18 +1147,18 @@ guiTypes = {
 				{
 					name ="lobby_int_chars"
 					spriteType = "GFX_lobby_int_chars"
-					position = { x= 9 y = 273 }
+					position = { x= -909 y = 273 }
 					Orientation = "UPPER_LEFT"
 				}
 				instantTextBoxType = 
 				{
 					name = "interesting_characters_label"
-					position = { x = 22 y = 290 }
+					position = { x = 265 y = 74 }
 					textureFile = ""
 					font = "vic_18"
 					borderSize = {x = 0 y = 0}
 					text = "FE_INTERESTING_CHARACTERS"	
-					maxWidth = 212
+					maxWidth = 281
 					maxHeight = 20	
 					Orientation = "UPPER_LEFT"
 					format = centre
@@ -1169,8 +1175,9 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "savedgame_tab"
-					position = { x = 48  y = 43 }
+					position = { x = 322  y = 38 }
 					quadTextureSprite ="GFX_standard_button_164"
+					#quadTextureSprite ="GFX_lobby_left_loadsave"
 					buttonFont = "vic_18"
 					buttonText = "FE_LOAD_GAME"
 					clicksound = character_view_click
@@ -1235,7 +1242,7 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
-						offset = { x=10 y=0 }
+						offset = { x=0 y=0 }
 						borderSize = {x = 0 y = 0}
 					}
 					
@@ -1270,36 +1277,53 @@ guiTypes = {
 					instantTextBoxType = 
 					{
 						name = "bookmarks_label"
-						position = { x = 22 y = 85 }
+						position = { x = 10 y = 49 }
 						textureFile = ""
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						text = "FE_BOOKEDMARKED"	
-						maxWidth = 212
+						maxWidth = 260
 						maxHeight = 20	
 						format = centre
 					}
-
+					instantTextBoxType = 
+					{
+						name = "bookmarks_label_blabla"
+						position = { x = 30 y = 215 }
+						textureFile = ""
+						font = "vic_18_black"
+						borderSize = {x = 0 y = 0}
+						text = "BOOKMARK_BLABLA"	
+						maxWidth = 220
+						maxHeight = 60	
+						format = centre
+					}
+					
 					listboxType = 
 					{
 						name ="bookmarks_list"
-						position = { x = -11 y = 106 }
+						#position = { x = -11 y = 106 }
+						position = { x = 0 y = 268 }
 						backGround=""
-						size = { x=239 y =168}
+						#size = { x=239 y =168}
+						size = { x=239 y =210}
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
+						offset = { x=-9242 y=0 }
 						borderSize = {x = 0 y = 0}
 					}
 					listboxType = 
 					{
 						name = "Chars_Listbox"
-						position = { x=20 y = 317 }
+						#position = { x=20 y = 317 }
+						position = { x=271 y = 101 }
 						backGround=""
-						size = { x = 200  y = 228 }
+						size = { x = 274  y = 390 }
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
+						offset = { x=0 y=0 }
 						borderSize = {x = 0 y = 0}
 					}
 				}
@@ -1309,8 +1333,8 @@ guiTypes = {
 			{
 				name ="right_window"
 				backGround=""
-				position = { x=-13 y =-18}	
-				size = { x=420 y =500}
+				position = { x=-138 y =-18}	
+				size = { x=542 y =500}
 				moveable = 0
 				dontRender = ""
 				horizontalBorder= ""
@@ -1323,28 +1347,28 @@ guiTypes = {
 				{
 					name ="right_sidepanel_char"
 					spriteType = "GFX_lobby_right_bg"
-					position = { x= -246 y = 31 }
+					position = { x= -266 y = 31 }
 					Orientation = "UPPER_RIGHT"
 				}
 				iconType = 
 				{
 					name ="right_sidepanel_players"
 					spriteType = "GFX_lobby_mp_bg"
-					position = { x= -246 y = 31 }
+					position = { x= -266 y = 31 }
 					Orientation = "UPPER_RIGHT"				
 				}
 				iconType = 
 				{
 					name = "right_sidepanel_republics"
 					spriteType = "GFX_lobby_republic_bg"
-					position = { x = -246 y = 31 }
+					position = { x = -266 y = 31 }
 					Orientation = "UPPER_RIGHT"
 				}
 				
 				guiButtonType = 
 				{
-					name = "character_tab"
-					position = { x = -227 y = 47 } 
+					name = "character_tab" #TABZ
+					position = { x = -122 y = 47 } 
 					quadTextureSprite ="GFX_lobby_tab"
 					Orientation = "UPPER_RIGHT"					
 					clicksound = generic_click_04
@@ -1353,14 +1377,14 @@ guiTypes = {
 				guiButtonType = 
 				{
 					name = "players_tab"
-					position = { x = -116  y = 47 }
+					position = { x = -11  y = 47 }
 					quadTextureSprite ="GFX_lobby_tab"
 					Orientation = "UPPER_RIGHT"
 					clicksound = generic_click_04
 				}
 
 				guiButtonType = {
-					position = { x = -222 y = 53 } 
+					position = { x = -217 y = 277 } 
 					name = "republics_tab"
 					quadTextureSprite ="GFX_lobby_dlc_tab_republics"
 					pdx_tooltip = "REPUBLICS"
@@ -1371,7 +1395,7 @@ guiTypes = {
 				instantTextBoxType = 
 				{
 					name = "character_label"
-					position = { x = -224 y = 57 }
+					position = { x = -119 y = 57 }
 					textureFile = ""
 					font = "vic_18"
 					borderSize = {x = 0 y = 0}
@@ -1387,7 +1411,7 @@ guiTypes = {
 				instantTextBoxType = 
 				{
 					name = "players_label"
-					position = { x = -101 y = 57 }
+					position = { x = -1 y = 57 }
 					textureFile = ""
 					font = "vic_18"
 					borderSize = {x = 0 y = 0}
@@ -1402,7 +1426,7 @@ guiTypes = {
 				instantTextBoxType = 
 				{
 					name = "players_number"
-					position = { x = -50 y = 57 }
+					position = { x = 55 y = 57 }
 					textureFile = ""
 					font = "vic_18"
 					borderSize = {x = 0 y = 0}
@@ -1421,7 +1445,7 @@ guiTypes = {
 					name ="singleplayer"
 					backGround="" 
 					position = { x=-226 y =40}	
-					size = { x=200 y =340}
+					size = { x=382 y =340}
 					moveable = 0
 					dontRender = ""
 					horizontalBorder= ""
@@ -1435,49 +1459,84 @@ guiTypes = {
 					
 					instantTextBoxType = {
 						name = "selected_nation_label"
-						position = { x = 15 y = 231 }
+						#position = { x = 112 y = 328 }
+						position = { x = 66 y = 302 }
 						textureFile = ""
-						font = "Arial12_black"
+						#font = "Arial12_black"
+						#font = "vic_18_black"
+						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						text = ""	
-						maxWidth = 190
+						#maxWidth = 190
+						maxWidth = 274
 						maxHeight = 12	
 						fixedsize = yes
-						format = left
+						format = centre
 					}
 					instantTextBoxType = {
-						name = "selected_nation_status_label"
-						position = { x = 15 y = 246 }
+						name = "selected_nation_status_label" #indé ou vassal
+						#position = { x = 137 y = 346 }
+						position = { x = 152 y = 336 }
 						textureFile = ""
-						font = "Arial12_black"
+						#font = "Arial12_black"
+						font = "vic_18_black"
 						borderSize = {x = 0 y = 0}
 						text = ""	
-						maxWidth = 190
-						maxHeight = 16	
+						maxWidth = 110
+						maxHeight = 54	
 						fixedsize = yes
-						format = left
+						format = centre
 					}
+					
+				instantTextBoxType = {
+					name = "culture_label"
+					position = { x = 75 y = 230 }
+					textureFile = ""
+					font = "vic_18_black"
+					#font = "Arial12_black"
+					borderSize = {x = 0 y = 0}
+					text = "Cultureee "
+					fixedsize = yes
+					maxWidth = 100
+					maxHeight = 20	
+					format = left
+				}
 					instantTextBoxType = {
 						name = "selected_culture"
-						position = { x = 15 y = 261 }
+						position = { x = 120 y = 230 }
 						textureFile = ""
-						font = "Arial12_black"
+					font = "vic_18_black"
+					#font = "Arial12_black"
 						borderSize = {x = 0 y = 0}
 						text = "Swedish"	
-						maxWidth = 190
-						maxHeight = 16	
+						maxWidth = 134
+						maxHeight = 20	
 						fixedsize = yes
 						format = left
 					}
+				instantTextBoxType = {
+					name = "religion_label"
+					position = { x = 75 y = 249 }
+					textureFile = ""
+					font = "vic_18_black"
+					#font = "Arial12_black"
+					borderSize = {x = 0 y = 0}
+					text = "Religionee "
+					fixedsize = yes
+					maxWidth = 134
+					maxHeight = 20	
+					format = left
+				}
 					instantTextBoxType = {
 						name = "selected_religion"
-						position = { x = 15 y = 276 }
+						position = { x = 126 y = 249 }
 						textureFile = ""
-						font = "Arial12_black"
+					font = "vic_18_black"
+					#font = "Arial12_black"
 						borderSize = {x = 0 y = 0}
 						text = "Catholic"	
-						maxWidth = 190
-						maxHeight = 16	
+						maxWidth = 134
+						maxHeight = 20	
 						fixedsize = yes
 						format = left
 					}
@@ -1497,40 +1556,44 @@ guiTypes = {
 					###
 
 					instantTextBoxType = {
-						name = "selected_ruler"
-						position = { x = 20 y = 49 }
+						name = "selected_ruler"  #NOM
+						position = { x = 128 y = 48 }
 						textureFile = ""
 						font = "vic_18_black"
 						borderSize = {x = 0 y = 0}
 						text = ""	
-						maxWidth = 180
-						maxHeight = 36
+						maxWidth = 174
+						maxHeight = 50
 						fixedsize = yes
 						format = centre
+						#format = left
 					}
 					
 					guiButtonType = {
-						position = { x= 10 y = 89 }
+						#position = { x= 10 y = 89 }
+						position = { x= 163 y = 117 }
 						name = "dynasty_shield"	
-						quadTextureSprite ="GFX_shield_small"
+						quadTextureSprite ="GFX_shield_big"
+						scale = 0.65
+						#quadTextureSprite ="GFX_shield_medium"
 					}
 					instantTextBoxType = {
 						name = "selected_dynasty"
-						position = { x = 43 y = 94 }
+						position = { x = 66 y = 206 }
 						textureFile = ""
 						font = "vic_18_black"
 						borderSize = {x = 0 y = 0}
 						text = "Svensson"	
-						maxWidth = 160
+						maxWidth = 274
 						maxHeight = 20
 						fixedsize = yes
-						format = left
+						format = centre
 					}
 
 					guiButtonType = {
 						name ="player_portrait"
 						quadTextureSprite = "GFX_char_100"
-						position =  { x= 30 y = 119 }
+						position =  { x= -4 y = 15 }
 						Orientation = "UPPER_LEFT"
 						pdx_tooltip = "CHARACTER_TOOLTIP"
 						pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
@@ -1539,12 +1602,12 @@ guiTypes = {
 					{
 						name = "player_portrait_frame"
 						quadTextureSprite = "GFX_charframe_100"
-						position = { x= 22 y = 111 }
+						position = { x= -12 y = 7 } #prec -8x -8y
 						Orientation = "UPPER_LEFT"
 					}
 					
 					guiButtonType = {
-						position = { x= 4 y = 173 }
+						position = { x= 310 y = 40 }
 						name = "player_shield"	
 						quadTextureSprite ="GFX_shield_medium"
 					}
@@ -1553,13 +1616,13 @@ guiTypes = {
 						name ="player_crown"
 						#name ="player_shield_crown"
 						spriteType = "GFX_shield_crown_strip_medium"
-						position = { x= 16 y = 150 }
+						position = { x= 322 y = 16 }
 						Orientation = "UPPER_LEFT"
 					}
 					guiButtonType = {
 						name ="liege_portrait"
 						quadTextureSprite = "GFX_char_50"
-						position = { x= 143 y = 132 }
+						position = { x= 74 y = 335 }
 						Orientation = "UPPER_LEFT"
 						pdx_tooltip = "CHARACTER_TOOLTIP"
 						pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
@@ -1568,38 +1631,49 @@ guiTypes = {
 					{
 						name = "liege_portrait_frame"
 						quadTextureSprite = "GFX_charframe_50"
-						position = { x= 136 y = 124 }
+						position = { x= 68 y = 327 }
 						Orientation = "UPPER_LEFT"
 					}
 				
 					guiButtonType = {
-						position = { x= 137 y = 164 }
+						position = { x= 282 y = 326 }
 						name = "liege_shield"	
-						quadTextureSprite ="GFX_shield_small"
+						quadTextureSprite ="GFX_shield_medium"
 					}
 					
 					guiButtonType = {
-						position = { x= 124 y = 189 }
+						position = { x= 70 y = 90 }
 						name = "customize"	
 						quadTextureSprite ="GFX_lobby_cust_open"
 						pdx_tooltip = "RD_OPEN_RULER_DESIGNER"
 						clicksound = generic_click_04
 					}		
 					
+					#instantTextBoxType = {
+					#	name = "statut_label"
+					#	position = { x = 66 y = 301 }
+					#	textureFile = ""
+					#	font = "vic_18"
+					#	borderSize = {x = 0 y = 0}
+					#	text = "FE_STATUT"	
+					#	maxWidth = 274
+					#	maxHeight = 32	
+					#	format = centre
+					#}
 					instantTextBoxType = {
 						name = "vassals_label"
-						position = { x = 20 y = 365 }
+						position = { x = 66 y = 398 }
 						textureFile = ""
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						text = "FE_VASSALS"	
-						maxWidth = 180
+						maxWidth = 274
 						maxHeight = 32	
-						format = left
+						format = centre
 					}
 					instantTextBoxType = {
 						name = "vassals_amount"
-						position = { x = 20 y = 365 }
+						position = { x = 140 y = 400 }
 						textureFile = ""
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
@@ -1611,36 +1685,37 @@ guiTypes = {
 					listboxType = 
 					{
 						name = "Vassals_Listbox"
-						position = { x=5 y = 385 }
+						position = { x=66 y = 419 }
 						backGround=""
-						size = { x = 200 y = 228 }
+						size = { x = 274 y = 275 }
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
+						offset = { x=0 y=-3 } #addition arko
 						borderSize = {x = 0 y = 0}
 					}
 					
 					# difficulty
 					
 
-					iconType =
+					iconType = #made offscreen x+1000
 					{
 						name ="difficultybar"
 						spriteType = "GFX_difficulty_progress"
-						position = { x= 33 y = 316 }
+						position = { x= 1033 y = 316 }
 						Orientation = "UPPER_LEFT"
 					}
 					iconType =
 					{
 						name ="difficulty"
 						spriteType = "GFX_lobby_difficulty_overlay"
-						position = { x= 9 y = 309 }
+						position = { x= 1009 y = 309 }
 						Orientation = "UPPER_LEFT"
 					}
 
 					instantTextBoxType = {
 						name = "difficulty_label"
-						position = { x = 20 y = 297 }
+						position = { x = 1020 y = 297 }
 						textureFile = ""
 						font = "vic_18_black"
 						borderSize = {x = 0 y = 0}
@@ -1654,33 +1729,35 @@ guiTypes = {
 					### diplo status
 					instantTextBoxType = {
 						name = "diplo_status_label"
-						position = { x = 13 y = 340 }
+						#position = { x = 13 y = 340 }
+						position = { x = 75 y = 272 }
 						textureFile = ""
 						font = "vic_18_black"
 						borderSize = {x = 0 y = 0}
-						text = "FE_WARS"	
-						maxWidth = 180
+						text = "FE_DIPLOMACY"	
+						maxWidth =  160
 						maxHeight = 20	
 						format = left
 						fixedsize = yes
 					}
 					
-					OverlappingElementsBoxType = {
+					OverlappingElementsBoxType = { #guerres en cours ?
 						name = "info_list_box"
-						position = { x = 60 y = 328 }
-						size = { x = 135 y = 32 }
-						format = right
+						#position = { x = 60 y = 328 }
+						position = { x = 73 y = 200 }
+						size = { x = 220 y = 32 }
+						format = centre
 						spacing = 0
 					}
 				}
 				
-				### players
+				### players #liste joueurs en modemp
 				windowType = 
 				{
 					name ="players"
 					backGround="" 
 					position = { x=-226 y =40}	
-					size = { x=200 y =340}
+					size = { x=382 y =340}
 					moveable = 0
 					dontRender = ""
 					horizontalBorder= ""
@@ -1689,21 +1766,34 @@ guiTypes = {
 					downsound = ""
 					fullscreen=no
 					Orientation = "UPPER_RIGHT"
+
+					instantTextBoxType = { #
+						name = "TitlemultiARKO"
+						position = { x = 66 y = 57 }
+						textureFile = ""
+						font = "vic_18_black"
+						borderSize = {x = 0 y = 0}
+						text = "MULTIee"	
+						maxWidth = 274
+						maxHeight = 20	
+						format = centre
+						fixedsize = yes
+					}
 					
 					listboxType = 
 					{
 						name = "Players_Listbox"
-						position = { x=5 y = 62 }
+						position = { x=66 y = 224 }
 						backGround=""
-						size = { x = 200 y = 513 }
+						size = { x = 274 y = 390 }
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
 						borderSize = {x = 0 y = 0}
 					}
-					instantTextBoxType = {
+					instantTextBoxType = { #CHECKSUM_MULTI
 						name = "checksum"
-						position = { x = 9 y = 576 }
+						position = { x = 99 y = 631 }
 						textureFile = ""
 						font = "vic_18_black"
 						borderSize = {x = 0 y = 0}
@@ -1720,7 +1810,7 @@ guiTypes = {
 					name ="republics"
 					backGround="" 
 					position = { x=-226 y =40}	
-					size = { x=200 y =340}
+					size = { x=382 y =340}
 					moveable = 0
 					dontRender = ""
 					horizontalBorder= ""
@@ -1733,25 +1823,49 @@ guiTypes = {
 					listboxType = 
 					{
 						name = "Republics_Listbox"
-						position = { x=5 y = 67 }
+						position = { x=66 y = 309 }
 						backGround=""
-						size = { x = 200 y = 549 }
+						size = { x = 274 y = 275 }
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
 						borderSize = {x = 0 y = 0}
 					}
 					
-					instantTextBoxType = {
+					instantTextBoxType = { #vanilla écarté car synthaxe pourrie et non modifiable
 						name = "Title"
-						position = { x = 8 y = 43 }
+						position = { x = 508 y = 43 }
 						textureFile = ""
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
-						text = "TEST"	
+						text = "REPUBLICS"	
 						maxWidth = 200
 						maxHeight = 20	
 						format = centre
+						fixedsize = yes
+					}
+					instantTextBoxType = { #remplace précédent
+						name = "TitlerepublicARKO"
+						position = { x = 66 y = 57 }
+						textureFile = ""
+						font = "vic_18_black"
+						borderSize = {x = 0 y = 0}
+						text = "REPUBLICSee"	
+						maxWidth = 274
+						maxHeight = 20	
+						format = centre
+						fixedsize = yes
+					}
+		instantTextBoxType = { #blabla république
+						name = "TitlerepublicARKOblabla"
+						position = { x = 69 y = 230 }
+						textureFile = ""
+						font = "vic_18_black"
+						borderSize = {x = 0 y = 0}
+						text = "REPUBLICSeeBLABLA"	
+						maxWidth = 270
+						maxHeight = 130	
+						format = center
 						fixedsize = yes
 					}
 				}
@@ -2400,7 +2514,8 @@ guiTypes = {
 				instantTextBoxType = 
 				{
 					name = "dynasty_label"
-					position = { x = -213 y = -12 }
+					#position = { x = -213 y = -12 }
+					position = { x = -343 y = 231 }
 					textureFile = ""
 					font = "vic_18_black"
 					borderSize = {x = 0 y = 0}
@@ -2477,7 +2592,7 @@ guiTypes = {
 					text = "RD_CULTURE"
 					maxWidth = 70
 					maxHeight = 20
-					format = left
+					format = right
 					fixedsize = yes
 				}
 				instantTextBoxType = 
@@ -2490,7 +2605,7 @@ guiTypes = {
 					text = "RD_RELIGION"
 					maxWidth = 70
 					maxHeight = 20
-					format = left
+					format = right
 					fixedsize = yes
 				}
 				
@@ -2504,7 +2619,7 @@ guiTypes = {
 					text = "Swedish"
 					maxWidth = 80
 					maxHeight = 20
-					format = right
+					format = left
 					fixedsize = yes
 				}
 				instantTextBoxType = 
@@ -2517,7 +2632,7 @@ guiTypes = {
 					text = "Catholic"
 					maxWidth = 80
 					maxHeight = 20
-					format = right
+					format = left
 					fixedsize = yes
 				}
 				
@@ -4788,7 +4903,7 @@ guiTypes = {
 			
 				guiButtonType = 
 				{
-					position = { x= -129 y = 69 }
+					position = { x= -127 y = 69 }
 					name = "mapmode_terrain"
 					quadTextureSprite ="GFX_mapmode_terrain"
 					Orientation = "CENTER_UP"
@@ -4798,7 +4913,7 @@ guiTypes = {
 				
 				guiButtonType = 
 				{
-					position = { x= -97 y = 69 }
+					position = { x= -99 y = 69 }
 					name = "mapmode_realms"
 					quadTextureSprite ="GFX_mapmode_realms"
 					Orientation = "CENTER_UP"
@@ -4808,7 +4923,7 @@ guiTypes = {
 				
 				guiButtonType = 
 				{
-					position = { x= -65 y = 69 }
+					position = { x= -71 y = 69 }
 					name = "mapmode_defacto_counties"
 					quadTextureSprite ="GFX_mapmode_counties"
 					Orientation = "CENTER_UP"
@@ -4818,7 +4933,7 @@ guiTypes = {
 				
 				guiButtonType = 
 				{
-					position = { x= -33 y = 69 }
+					position = { x= -43 y = 69 }
 					name = "mapmode_defacto_duchies"
 					quadTextureSprite ="GFX_mapmode_duchies"
 					Orientation = "CENTER_UP"
@@ -4828,7 +4943,7 @@ guiTypes = {
 				
 				guiButtonType = 
 				{
-					position = { x= -1 y = 69 }
+					position = { x= -15 y = 69 }
 					name = "mapmode_defacto_kingdoms"
 					quadTextureSprite ="GFX_mapmode_kingdoms"
 					Orientation = "CENTER_UP"
@@ -4838,7 +4953,7 @@ guiTypes = {
 				
 				guiButtonType = 
 				{
-					position = { x= 31 y = 69 }
+					position = { x= 13 y = 69 }
 					name = "mapmode_religion"
 					quadTextureSprite ="GFX_mapmode_religion"
 					Orientation = "CENTER_UP"
@@ -4848,7 +4963,7 @@ guiTypes = {
 				
 				guiButtonType = 
 				{
-					position = { x= 63 y = 69 }
+					position = { x= 41 y = 69 }
 					name = "mapmode_culture"
 					quadTextureSprite ="GFX_mapmode_culture"
 					Orientation = "CENTER_UP"
@@ -4856,17 +4971,27 @@ guiTypes = {
 					pdx_tooltip_delayed = "MAPMODE_CULTURE_DESC"
 				}
 				
+				guiButtonType = 
+				{
+					position = { x= 69 y = 69 }
+					name = "mapmode_governments"
+					quadTextureSprite ="GFX_mapmode_governments"
+					Orientation = "CENTER_UP"
+					pdx_tooltip ="MAPMODE_GOVERNMENTS"
+					pdx_tooltip_delayed = "MAPMODE_GOVERNMENTS_DESC"
+				}
+				
 				### show only for multiplayer.
 				iconType =
 				{
 					name ="players_mapmode_bg"
 					spriteType = "GFX_lobby_players_mapmode_bg"
-					position = { x= 93 y = 64 }
+					position = { x= 97 y = 64 }
 					Orientation = "CENTER_UP"
 				}
 				guiButtonType =
 				{
-					position = { x= 95 y = 69 }
+					position = { x= 97 y = 69 }
 					name = "mapmode_players"
 					quadTextureSprite ="GFX_mapmode_players"
 					Orientation = "CENTER_UP"
@@ -4895,7 +5020,7 @@ guiTypes = {
 				{
 					name ="chatpanel"
 					spriteType = "GFX_lobby_bottom_bg"
-					position = { x= 0 y = -185 }
+					position = { x= -5 y = -240 }
 					Orientation = "LOWER_LEFT"
 				}
 				
@@ -4903,7 +5028,7 @@ guiTypes = {
 				{
 					name ="SoI_DLC"
 					spriteType = "GFX_dlc_icon_sword_of_islam"
-					position = { x= 30 y = -218 }
+					position = { x= 7 y = -221 }
 					Orientation = "LOWER_LEFT"
 				}
 				
@@ -4911,7 +5036,7 @@ guiTypes = {
 				{
 					name ="LoR_DLC"
 					spriteType = "GFX_dlc_icon_legacy_of_rome"
-					position = { x= 64 y = -218 }
+					position = { x= 53 y = -221 } 
 					Orientation = "LOWER_LEFT"
 				}
 				
@@ -4919,7 +5044,7 @@ guiTypes = {
 				{
 					name ="SI_DLC"
 					spriteType = "GFX_dlc_icon_sunset_invasion"
-					position = { x= 98 y = -218 }
+					position = { x= 93 y = -221 }
 					Orientation = "LOWER_LEFT"
 				}
 				
@@ -4927,7 +5052,7 @@ guiTypes = {
 				{
 					name ="TR_DLC"
 					spriteType = "GFX_dlc_icon_the_republic"
-					position = { x= 132 y = -218 }
+					position = { x= 145 y = -221 }
 					Orientation = "LOWER_LEFT"
 				}
 				
@@ -4935,7 +5060,7 @@ guiTypes = {
 				{
 					name ="TOG_DLC"
 					spriteType = "GFX_dlc_icon_the_old_gods"
-					position = { x= 166 y = -218 }
+					position = { x= 191 y = -221 }
 					Orientation = "LOWER_LEFT"
 				}
 				
@@ -4943,7 +5068,7 @@ guiTypes = {
 				{
 					name ="SoA_DLC"
 					spriteType = "GFX_dlc_icon_sons_of_abraham"
-					position = { x= 200 y = -218 }
+					position = { x= 237 y = -221 }
 					Orientation = "LOWER_LEFT"
 				}
 				
@@ -4951,7 +5076,7 @@ guiTypes = {
 				{
 					name ="RoI_DLC"
 					spriteType = "GFX_dlc_icon_rajas_of_india"
-					position = { x= 234 y = -218 }
+					position = { x= 283 y = -221 }
 					Orientation = "LOWER_LEFT"
 				}
 				
@@ -4959,7 +5084,7 @@ guiTypes = {
 				{
 					name ="CM_DLC"
 					spriteType = "GFX_dlc_icon_charlemagne"
-					position = { x= 268 y = -218 }
+					position = { x= 329 y = -221 }
 					Orientation = "LOWER_LEFT"
 				}
 				
@@ -4967,13 +5092,21 @@ guiTypes = {
 				{
 					name ="WOL_DLC"
 					spriteType = "GFX_dlc_icon_way_of_life"
-					position = { x= 302 y = -218 }
+					position = { x= 376 y = -221 }
+					Orientation = "LOWER_LEFT"
+				}
+				
+				iconType = 
+				{
+					name ="HL_DLC"
+					spriteType = "GFX_dlc_icon_horse_lords"
+					position = { x= 422 y = -221 }
 					Orientation = "LOWER_LEFT"
 				}
 				
 				editBoxType = 
 				{
-					position = { x = 3 y = -38 }
+					position = { x = -3 y = -41 }
 					name = "lobby_chat_edit"
 					textureFile = "gfx\\interface\\small_tiles_dialog.dds"
 					font = "Arial12"
@@ -4989,7 +5122,7 @@ guiTypes = {
 					name ="chatlog"
 					position = { x = 19 y = -167 }
 					backGround=""
-					size = { x= 646 y =112 }
+					size = { x= 646 y =132 }
 					Orientation = "LOWER_LEFT"
 					spacing = 0
 					scrollbartype = "standardlistbox_slider"
@@ -4999,14 +5132,14 @@ guiTypes = {
 				instantTextBoxType = {
 
 					name ="scenario_description"
-					position = { x = 15 y = -174 }
+					position = { x = 19 y = -169 }
 					textureFile = ""
-					font = "vic_18"
+					font = "vic_18_black"
 					borderSize = {x = 4 y = 4}
 					text = ""	
 					Orientation = "LOWER_LEFT"
 
-					maxWidth = 652
+					maxWidth = 646
 					maxHeight = 125	
 				}
 
@@ -5016,28 +5149,31 @@ guiTypes = {
 					quadTextureSprite ="GFX_ironman_button"	
 					Orientation = "LOWER_RIGHT"
 					clicksound = menu_click
-					format = center
+					format = centre
 					pdx_tooltip = "IRONMAN_MODE"
 					pdx_tooltip_delayed = "IRONMAN_MODE_DESC"
 				}
 				
-				guiButtonType = {
+				guiButtonType = { #ALEA
 					name = "random_character_button"
 					position = { x = -328 y = -57 }
+					#position = { x = -344 y = -948 }
 					quadTextureSprite ="GFX_random_char_button"	
+					#quadTextureSprite ="GFX_lobby_cust_random"
 					Orientation = "LOWER_RIGHT"
 					clicksound = menu_click
 					pdx_tooltip = "RANDOM_CHARACTER"
 					pdx_tooltip_delayed = "RANDOM_CHARACTER_DESC"
+					
 				}
 
 				guiButtonType = 
 				{
 					name = "observe_button"
-					position = { x = -236 y = -210 }
-					quadTextureSprite ="GFX_big_button_220"	
+					position = { x = -226 y = -125 }
+					quadTextureSprite ="GFX_big_button_220_thin"	
 					buttonText = "OBSERVE"
-					buttonFont = "vic_22"
+					buttonFont = "vic_18"
 					Orientation = "LOWER_RIGHT"
 					clicksound = menu_click
 				}				
@@ -5289,12 +5425,13 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 32 y =9 }
+			position = { x = 32 y =17 }
 			format = left
 			font = "vic_18_black"
-			maxWidth = 124
-			maxHeight = 32	
+			maxWidth = 220
+			maxHeight = 54	
 			Orientation = "UPPER_LEFT"
+			format = left
 		}
 
 		guiButtonType = {
@@ -5318,12 +5455,13 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "save_progress"
-			position = { x = 32 y =40 }
-			format = left
+			position = { x = 32 y =17 }
+			#format = left
 			font = "small"
-			maxWidth = 256
+			maxWidth = 220
 			maxHeight = 32	
 			Orientation = "UPPER_LEFT"
+			format = right
 		}
 
 
@@ -5334,7 +5472,7 @@ guiTypes = {
 		name = "multiplayer_entry"
 		backGround=""
 		position = { x=0 y=0 }	
-		size = { x=150 y= 57 }
+		size = { x=274 y= 65 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -5352,22 +5490,23 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 32 y =9 }
+			position = { x = 32 y =40 }
 			format = left
 			font = "small"
-			maxWidth = 124
+			maxWidth = 210
 			maxHeight = 32	
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "save_progress"
-			position = { x = 32 y =40 }
-			format = left
+			position = { x = 32 y =17 }
+			#format = left
 			font = "small"
-			maxWidth = 256
+			maxWidth = 210
 			maxHeight = 32	
 			Orientation = "UPPER_LEFT"
+			format = right
 		}
 
 	}
@@ -5388,7 +5527,8 @@ guiTypes = {
 			name = "messagelogtext"
 			position = { x = 0 y = 0 }
 			textureFile = ""
-			font = "vic_18"
+			#font = "vic_18"
+			font = "vic_18_black"
 			borderSize = {x = 1 y = 1}
 			text = ""	
 			maxWidth = 632
@@ -5422,7 +5562,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 40 y = 9 }
+			position = { x = 70 y = 9 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 1 y = 1}
@@ -5442,6 +5582,7 @@ guiTypes = {
 			maxWidth = 200
 			maxHeight = 18	
 			fixedsize = yes
+			format = right
 		}
 		
 	}
@@ -5580,20 +5721,26 @@ guiTypes = {
 
 	 ### Vassal list in country selection ###
 	
-	windowType = {
+	windowType = { #ENTREE VASSAUX
 		name = "character_list_entry"
 		backGround=""
-		position = { x=-5 y=0 }	
-		size = { x=128 y= 57 }
+		position = { x=0 y=0 }	
+		size = { x=274 y= 65 }
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullScreen = no
-		
+
+		iconType = {
+			name ="lobby_right_entree_vassal"
+			spriteType = "GFX_lobby_right_entree_vassal"
+			position = { x= 0 y = 0 }
+		}
+			
 		guiButtonType = {
 			name ="portrait"
 			quadTextureSprite = "GFX_char_50"
-			position = { x= 0 y = 0 }
+			position = { x= 7 y = 8 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "CHARACTER_TOOLTIP"
 			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
@@ -5603,27 +5750,27 @@ guiTypes = {
 		{
 			name = "portrait_frame"
 			quadTextureSprite = "GFX_charframe_50"
-			position = { x= -6 y = -7 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
-			position = { x= -10 y = 30 }
+			position = { x= 216 y = 3 }
 			name = "shield"	
-			quadTextureSprite ="GFX_shield_small"
+			quadTextureSprite ="GFX_shield_medium"
 		}
 		
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 60  y = 3 }
+			position = { x = 74  y = 14 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}
 			text = ""	
-			maxWidth = 128
+			maxWidth = 135
 			maxHeight = 54
 			fixedsize = yes
-			
+			format = centre
 			Orientation = "UPPER_LEFT"
 		}	
 	}
@@ -5632,17 +5779,23 @@ guiTypes = {
 	windowType = {
 		name = "republics_list_entry"
 		backGround=""
-		position = { x=-5 y=0 }	
-		size = { x=128 y= 61 }
+		position = { x=0 y=0 }	
+		size = { x=274 y= 65 }
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullScreen = no
+
+		iconType = {
+			name ="lobby_right_entree_vassal"
+			spriteType = "GFX_lobby_right_entree_vassal"
+			position = { x= 0 y = 0 }
+		}
 		
 		guiButtonType = {
 			name ="portrait"
 			quadTextureSprite = "GFX_char_50"
-			position = { x= 0 y = 0 }
+			position = { x= 7 y = 8 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "CHARACTER_TOOLTIP"
 			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
@@ -5652,52 +5805,58 @@ guiTypes = {
 		{
 			name = "portrait_frame"
 			quadTextureSprite = "GFX_charframe_50"
-			position = { x= -6 y = -7 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
-			position = { x= -10 y = 30 }
+			position = { x= 216 y = 3 }
 			name = "shield"	
-			quadTextureSprite ="GFX_shield_small"
+			quadTextureSprite ="GFX_shield_medium"
 		}
 		
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 60  y = 3 }
+			position = { x = 79  y = 14 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}
 			text = ""	
-			maxWidth = 128
+			maxWidth = 125
 			maxHeight = 54
 			fixedsize = yes
-			
+			format = centre
 			Orientation = "UPPER_LEFT"
 		}	
 	}
 	
-	### Player entry 
+	### Player_entry 
 	windowType = {
 		name = "player_list_entry"
 		backGround=""
-		position = { x=-5 y=0 }	
-		size = { x=128 y= 57 }
+		position = { x=0 y=0 }	
+		size = { x=274 y= 65 }
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullScreen = no
+
+		iconType = {
+			name ="lobby_right_entree_vassal" #FOND ENTREE
+			spriteType = "GFX_lobby_right_entree_vassal"
+			position = { x= 0 y = 0 }
+		}
 		
 		guiButtonType = {
-			position = { x= -10 y = 27 }
+			position = { x= 216 y = 3 }
 			name = "shield"	
-			quadTextureSprite ="GFX_shield_small"
+			quadTextureSprite ="GFX_shield_medium"
 		}	
 		
 		guiButtonType = {
 			name ="portrait"
 			quadTextureSprite = "GFX_char_50"
-			position = { x= 0 y = -3 }
+			position = { x= 7 y = 8 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "CHARACTER_TOOLTIP"
 			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
@@ -5706,31 +5865,32 @@ guiTypes = {
 		{
 			name = "portrait_frame"
 			quadTextureSprite = "GFX_charframe_50"
-			position = { x= -6 y = -10 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "character_name"
-			position = { x = 57  y = -3 }
+			position = { x = 69  y = 0 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}
 			text = ""	
-			maxWidth = 135
-			maxHeight = 18
+			maxWidth = 145
+			maxHeight = 54
 			fixedsize = yes
-			
+			format = centre
+			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "player_name"
-			position = { x = 61  y = 14 }
+			position = { x = 65  y = 39 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}
 			text = ""	
-			maxWidth = 135
+			maxWidth = 144
 			maxHeight = 18
 			fixedsize = yes			
 		
@@ -5739,23 +5899,23 @@ guiTypes = {
 		guiButtonType = {
 			name = "button_kick"	
 			quadTextureSprite = "GFX_button_kick"
-			position = { x=140 y =30}
+			position = { x=117 y =39}
 			pdx_tooltip = "KICK_PLAYER"
 		}
 
 		guiButtonType = {
 			name = "button_ban"	
 			quadTextureSprite = "GFX_button_ban"
-			position = { x=164 y =30}
+			position = { x=157 y =39}
 		}
 		
 		instantTextBoxType = {
 			name = "save_progress"
-			position = { x = 61 y =33 }
-			format = left
+			position = { x = 65 y =41 }
+			format = right
 			font = "Arial12_black"
 			text = "100%"
-			maxWidth = 50
+			maxWidth = 144
 			maxHeight = 20	
 			fixedsize = yes
 			Orientation = "UPPER_LEFT"
@@ -5971,8 +6131,9 @@ guiTypes = {
 
 	guiButtonType = {
 		name ="war_shield"
-		position = { x = 0 y = 0 }
+		position = { x = 0 y =  0 }
 		quadTextureSprite = "GFX_shield_small"	
+		#quadTextureSprite = "GFX_shield_medium3"	
 		tooltip = ""
 		tooltipText =""
 		delayedTooltipText = ""
@@ -5983,17 +6144,17 @@ guiTypes = {
 
 	positionType = {
 		name = "warshield_position"
-		position = { x = -130 y = 355 }
+		position = { x = -80 y = 288 }
 	}
 
 	positionType = {
 		name = "alliesshield_position"
-		position = { x = -130 y = 488 }
+		position = { x = -80 y = 288 }
 	}
 
 	positionType = {
 		name = "warshield_offset"
-		position = { x = 32 y = 00 }
+		position = { x = 28 y = 00 }
 	}
 
 	### connection log text

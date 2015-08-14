@@ -363,7 +363,7 @@ guiTypes = {
 			fixedsize = yes
 		}		
 		
-		listboxType = {
+		smoothListboxType = {
 			name = "tradeposts_box"
 			position = { x = -14 y = 228 }
 			size = { x=88 y=180 }

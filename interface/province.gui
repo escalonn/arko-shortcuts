@@ -12,8 +12,6 @@ guiTypes = {
 		fullScreen = no
 		orientation = "LOWER_LEFT"
 		upsound = click
-
-
 		
 		iconType = {
 			name ="bg_province"
@@ -21,16 +19,16 @@ guiTypes = {
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
-		iconType = {
-			name ="domaine"
-			spriteType = "GFX_domaine"
-			position = { x= 0 y = 0 }
-			Orientation = "UPPER_LEFT"
-		}
+#		iconType = {
+#			name ="domaine"
+#			spriteType = "GFX_domaine"
+#			position = { x= 0 y = 234 }
+#			Orientation = "UPPER_LEFT"
+#		}
 
 		iconType = {
 			name ="bg_parchemin"
-			spriteType = "GFX_trade_post_bg"
+			spriteType = "GFX_trade_post_bg_arko"
 			position = { x= 273 y = 32 }
 			Orientation = "UPPER_LEFT"
 		}
@@ -61,6 +59,7 @@ guiTypes = {
 			position = { x=602 y=160 }
 			quadTextureSprite ="GFX_military_troop_strip_1"	
 			Orientation = "UPPER_LEFT"
+			shortcut = "z"
 		}
 
 		guiButtonType =	{
@@ -68,6 +67,7 @@ guiTypes = {
 			position = { x=635 y=160 }
 			quadTextureSprite ="GFX_military_troop_strip_1"	
 			Orientation = "UPPER_LEFT"
+			shortcut = "c"
 		}
 		
 		iconType = {
@@ -78,15 +78,15 @@ guiTypes = {
 		}
 		iconType = {
 			name ="loot_progress_frame"
-			spriteType = "GFX_loot_progress_frame" 
-			position = { x= 309 y = 168 } #x+1 y-4
+			spriteType = "GFX_loot_progress_frame"
+			position = { x= 309 y = 168 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name = "loot_protected_icon"
 			spriteType = "GFX_loot_protected_icon"
-			position = { x = 307 y = 175 } #x== y+3
+			position = { x = 307 y = 175 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -96,6 +96,13 @@ guiTypes = {
 			quadTextureSprite ="GFX_shield_medium"
 			Orientation = "UPPER_LEFT"
 		}
+		
+		guiButtonType = {
+			name = "show_region_info"
+			position = { x=53 y=118 }
+			quadTextureSprite ="GFX_show_region_info_icon"
+			Orientation = "UPPER_LEFT"
+		}		
 		
 		iconType =
 		{
@@ -113,7 +120,6 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}
 			text = ""
 			size = { x=180 y=32}
-			format = center
 			cursor = { x=4 y=1 }
 			Orientation = "UPPER_LEFT"
 		}
@@ -174,17 +180,17 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
-				name ="ruler_portrait_status"
-				spriteType = "GFX_overlay_char_status_100"
-				position = { x= 99 y = 31 }
-				Orientation = "UPPER_LEFT"
-			}
-			iconType = {
-				name ="ruler_portrait_relation"
-				spriteType = "GFX_overlay_char_relation_100"
-				position = { x= 159 y = 31 }
-				Orientation = "UPPER_LEFT"
-			}
+			name ="ruler_portrait_status"
+			spriteType = "GFX_overlay_char_status_100"
+			position = { x= 99 y = 31 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="ruler_portrait_relation"
+			spriteType = "GFX_overlay_char_relation_100"
+			position = { x= 159 y = 31 }
+			Orientation = "UPPER_LEFT"
+		}
 		
 #		guiButtonType = {
 #			name = "diplomacy_button"
@@ -204,7 +210,7 @@ guiTypes = {
 		OverlappingElementsBoxType = {
 			name = "temp_mods_box" #province modifiers
 			position = { x = 33 y = 204 }
-			size = { x=522 y= 32 }
+			size = { x=494 y= 32 }
 			Orientation = "UPPER_LEFT"
 			format = left
 			spacing = 0
@@ -234,388 +240,17 @@ guiTypes = {
 			format = left
 			spacing = -3
 		}
-		####
-###TRADEVIEW	
-		windowType = {
-			name = "trade_window"   
-			backGround =""
-			position = { x=0 y=237 }
-			size = { x=1024 y=224	 }
-			moveable = 0
-			dontRender = ""
-			horizontalBorder = "0"
-			verticalBorder = ""
-			fullScreen = no
-			orientation = "UPPER_LEFT"
-			upsound = click
+
+		#######general province info
 		
-			iconType = {
-				name ="trade_post_bg"
-				spriteType = "GFX_parchemin_arko"
-				position = { x= 273 y = 0 }
-			}
-			iconType = {
-				name ="trade_post_bg_notbuilt"
-				spriteType = "GFX_trade_post_bg_notbuilt"
-				position = { x= 273 y = 0 }
-			}
-		
-			guiButtonType = {
-				name = "trade_post"
-				position = { x = 465 y = -1 }
-				quadTextureSprite = "GFX_trade_post"
-				Orientation = "UPPER_LEFT"
-			}
-			
-			guiButtonType = {
-				name = "republic_shield"
-				position = { x= 498 y = -5 }
-				quadTextureSprite ="GFX_shield_medium"
-				Orientation = "UPPER_LEFT"
-			}
-			iconType =
-			{
-				name ="republic_crown"
-				spriteType = "GFX_shield_crown_strip_medium"
-				position = { x= -100 y = 11 }
-				Orientation = "UPPER_LEFT"
-			}
-		
-			guiButtonType = {
-				name = "family_shield"
-				position = { x= 292 y = 16 }
-				quadTextureSprite ="GFX_CoA_medium"
-				Orientation = "UPPER_LEFT"
-			}
-			
-			guiButtonType = {
-				name ="control_shield"
-				quadTextureSprite = "GFX_shield_medium2"
-				position = { x = 439 y = -8 }
-				Orientation = "UPPER_LEFT"
-			}
-			
-						iconType = {
-							name ="progress_bg1"
-							spriteType = "GFX_levy_progress_bg"
-							position = { x= 598 y = 90 }
-							Orientation = "UPPER_LEFT"
-						}
-						iconType = {
-							name ="garrison_size"
-							#spriteType = "GFX_levyprogress_1"
-							spriteType = "GFX_levyprogress_1"
-							position = { x= 602 y = 85 } #x+5 y+5
-							Orientation = "UPPER_LEFT"
-						}
-			iconType = {
-				name = "garrison_icon2"
-			#	spriteType = "GFX_combat_siege_end_garrison"
-			#	name ="garrison_arko"
-				spriteType = "gfx_transparency_white"
-				position = { x= 610 y = 73 }
-				Orientation = "UPPER_LEFT"
-			#	pdx_tooltip = "GARRISON_SIZE"
-			}
-						iconType = {
-							name = "garrison_icon"
-							#spriteType = "GFX_combat_siege_end_garrison"
-							spriteType = "GFX_garrison_arko"
-							position = { x= 600 y = 69 } #x-19 y-4
-							Orientation = "UPPER_LEFT"
-						}
-
-			iconType = {
-				name ="label_republic_arko"
-				spriteType ="GFX_label_arko"
-				position = { x = 464 y = 120 }
-				Orientation = "UPPER_LEFT"
-			}
-						
-			instantTextBoxType = {
-				name = "republic_name"
-				position = { x = 465 y = 125 }
-				textureFile = ""
-				font = "vic_22_black"
-				borderSize = {x = 0 y = 0}
-				text = ""
-				maxWidth = 128
-				maxHeight = 20
-				format = center
-				Orientation = "UPPER_LEFT"
-				fixedsize = yes
-			}
-			instantTextBoxType = {
-				name = "family_name"
-				position = { x = 347 y = 16 } #ex y=28
-				textureFile = ""
-				font = "vic_22_black"
-				borderSize = {x = -5 y = 0}
-				text = ""
-				maxWidth = 120
-				maxHeight = 20
-				format = center
-				Orientation = "UPPER_LEFT"
-				fixedsize = yes
-			}
-			iconType = {
-				name ="tax_icon"
-				spriteType ="GFX_icon_wealth"
-				position = { x = 604 y = 112 }
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "INCOME_TRADEPOST"
-			}
-			iconType = {
-				name ="fort_icon"
-				spriteType ="GFX_buildview_fort_icon"
-				position = { x = 600 y = 35 }
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "FORT_LEVEL"
-			}
-
-			
-			instantTextBoxType = {
-				name = "settlement_Taxinfo"
-				position = { x = 625 y = 119 } #x+30 y+7
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = ""
-				maxWidth = 35
-				maxHeight = 25
-				format = right
-				fixedsize = yes
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextBoxType = {
-				name = "settlement_Fortlevel"
-				position = { x = 625 y = 43 } #x+41 y+6
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = ""
-				maxWidth = 35
-				maxHeight = 25
-				format = right
-				fixedsize = yes
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "FORT_LEVEL"
-			}
-			
-			instantTextBoxType = {
-				name = "settlement_GarrisonSize"
-				position = { x = 624 y = 80 } #x+21 y+5
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = ""
-				maxWidth = 35
-				maxHeight = 25
-				format = right
-				fixedsize = yes
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "GARRISON_SIZE"
-			}
-			
-			### trade zone
-			instantTextBoxType = {
-				name = "TradeZone_label"
-				position = { x = 290 y = 80 } #x+330 y-110
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = "TRADE_ZONE"
-				maxWidth = 120
-				maxHeight = 25
-				format = left
-				fixedsize = yes
-				Orientation = "UPPER_LEFT"
-			}
-			
-			iconType = {
-				name ="tradezone_value_icon"
-				spriteType = "GFX_trade_zone_value"
-				position = { x= 312 y = 98 }
-			}
-			
-			instantTextBoxType = {
-				name = "tradezone_value"
-				position = { x = 302 y = 121 }
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = "666"
-				maxWidth = 48
-				maxHeight = 25
-				format = centre
-				fixedsize = yes
-			}
-			
-			iconType = {
-				name ="tradezone_size_icon"
-				spriteType = "GFX_trade_zone_size"
-				position = { x= 358 y = 103 }
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextBoxType = {
-				name = "tradezone_size"
-				position = { x = 347 y = 121 }
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = ""
-				maxWidth = 48
-				maxHeight = 25
-				format = centre
-				fixedsize = yes
-				Orientation = "UPPER_LEFT"
-			}
-			
-			iconType = {
-				name ="tradezone_income_icon"
-				spriteType ="GFX_icon_wealth"
-				position = { x = 409 y = 95 }
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextBoxType = {
-				name = "tradezone_income"
-				position = { x = 399 y = 121 } #x+31 y+7
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = ""
-				maxWidth = 48
-				maxHeight = 25
-				format = center
-				fixedsize = yes
-				Orientation = "UPPER_LEFT"
-			}
-			
-			### family income
-			instantTextBoxType = {
-				name = "FamilyIncome_label"
-				position = { x = -290 y = 114 }
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = "TOTAL_TRADE_FAMILY"
-				maxWidth = 120
-				maxHeight = 25
-				format = centre
-				fixedsize = yes
-			}
-			iconType = {
-				name ="Family_size_icon"
-				spriteType = "GFX_trade_zone_size"
-				position = { x= 358 y = 45 }
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextBoxType = {
-				name = "Family_size"
-				position = { x = 347 y = 64 } #x+26 y+2
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = "666"
-				maxWidth = 48
-				maxHeight = 25
-				format = centre
-				fixedsize = yes
-				Orientation = "UPPER_LEFT"
-			}
-			
-			iconType = {
-				name ="Family_income_icon"
-				spriteType ="GFX_icon_wealth"
-				position = { x = 409 y = 37 }
-
-			}
-			
-			instantTextBoxType = {
-				name = "Family_income"
-				position = { x = 399 y = 64 } #x+31 y+7
-				textureFile = ""
-				font = "vic_18_black"
-				borderSize = {x = 0 y = 0}
-				text = "666"
-				maxWidth = 48
-				maxHeight = 25
-				format = center
-				fixedsize = yes
-			}
-			
-			iconType = { #"no trade post built" + barre progression construction.
-				name ="build_progress"
-				#spriteType = "GFX_default_progress"
-				spriteType = "GFX_default_progress_arko"
-				position = { x= 284 y = 64 }
-			}
-			iconType = {
-				name ="build_progress_overlay"
-				spriteType = "GFX_default_progress_overlay"
-				position = { x= 284 y = 62 } #x-8 y-9
-			}
-			instantTextBoxType = {
-				name = "info_text"
-				position = { x = 301 y = 82 }
-				textureFile = ""
-				font = "vic_22_black"
-				#borderSize = {x = 0 y = 0}
-				borderSize = {x = 0 y = 0}
-				text = "TP_NO_TRADE_POST_BUILT"
-				maxWidth = 145
-				maxHeight = 80
-				format = centre
-				fixedsize = yes
-
-				allwaystransparent = yes
-			}
-		}
-		
-		### tabs for trade post / holdings.
-		guiButtonType = {
-			name = "tradetab_settlements"
-			position = { x = 681 y = 289 }
-			quadTextureSprite = "GFX_province_tab_button"
-			Orientation = "UPPER_LEFT"
-			pdx_tooltip = "LEDGER_PROVINCE_SETTLEMENTS"
-		}
-		iconType = {
-			name ="holding_tab_icon"
-			spriteType ="GFX_holding_tab_icon"
-			position = { x = 683 y = 299 }
-		}
-		guiButtonType = {
-			name = "tradetab_trade"
-			position = { x = 681 y = 340 }
-			quadTextureSprite = "GFX_province_tab_button"
-			Orientation = "UPPER_LEFT"
-			pdx_tooltip = "TRADE"
-		}
-		iconType = {
-			name ="trade_post_tab_icon"
-			spriteType ="GFX_trade_post_tab_icon"
-			position = { x = 679 y = 348 }
-		}
-
-		######
-		#general province info
-
-	
 		guiButtonType = {
 			name = "kingdom_shield" #DJ
 			position = { x= 303 y = 58 }
-			#position = { x= 433 y = 46 }
 			quadTextureSprite ="GFX_shield_medium2"
 			Orientation = "UPPER_LEFT"
 		}
 		guiButtonType = {
 			name = "duchy_shield" #DJ
-			#position = { x= 420 y = 75 }
 			position = { x= 394 y = 58 }
 			quadTextureSprite ="GFX_shield_medium2"
 			Orientation = "UPPER_LEFT"
@@ -663,39 +298,20 @@ guiTypes = {
 			fixedsize = yes
 		}
 
-#		iconType = {
-#			name ="religion_icon"
-#			spriteType = "GFX_religion_icon_strip"
-#			position = { x= 256 y = 131 }
-#			Orientation = "UPPER_LEFT"
-#		}
-#		textBoxType = {
-#			name = "label_religion"
-#			position = { x = 288 y = 115 }
-#			textureFile = ""
-#			font = "Arial12_black"
-#			borderSize = {x = 0 y = 0}
-#			text = "RELIGION"
-#			maxWidth = 70
-#			maxHeight = 14
-#			format = left
-#			Orientation = "UPPER_LEFT"
-#			fixedsize = yes
-#		}
-	
-#		textBoxType = {
-#			name = "label_culture"
-#			position = { x = 288 y = 127 }
-#			textureFile = ""
-#			font = "Arial12_black"
-#			borderSize = {x = 0 y = 0}
-#			text = "CULTURE"
-#			maxWidth = 70
-#			maxHeight = 14
-#			format = left
-#			Orientation = "UPPER_LEFT"
-#			fixedsize = yes
-#		}
+		textBoxType = {
+			name = "label_culture"
+			position = { x = -9288 y = 127 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}
+			text = "CULTURE"
+			maxWidth = 70
+			maxHeight = 14
+			format = left
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+		}
+
 		instantTextBoxType = {
 			name = "culture"
 			position = { x = 363 y = 136 }
@@ -704,6 +320,20 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = ""
 			maxWidth = 95
+			maxHeight = 14
+			format = right
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+		}
+
+		textBoxType = {
+			name = "label_religion"
+			position = { x = -9288 y = 136 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}
+			text = "RELIGION"
+			maxWidth = 70
 			maxHeight = 14
 			format = right
 			Orientation = "UPPER_LEFT"
@@ -750,7 +380,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
-		
 		iconType = {
 			name ="decadence_label"
 			spriteType = "GFX_decadence_revolt_label"
@@ -758,7 +387,7 @@ guiTypes = {
 		}
 		iconType = {
 			name ="revolt_risk_icon"
-			spriteType = "GFX_ironman_revolt_icon"
+			spriteType = "GFX_ironman_revolt_icone"
 			position = { x= 605 y = 133 }
 		}
 		textBoxType = {
@@ -767,7 +396,7 @@ guiTypes = {
 			textureFile = ""
 			font = "Arial12_black"
 			borderSize = {x = 0 y = 0}
-			text = ""
+			text = "PLOTS_REVOLTRISK"
 			maxWidth = 20
 			maxHeight = 14
 			format = left
@@ -787,26 +416,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
-############TECH icon		
-		iconType = {
-			name = "icon_ecotech"
-			spriteType = "GFX_icon_ecotech"
-			position = { x = 607 y = 45 }
-		}
-		instantTextBoxType = {
-			name = "ecotech_value"
-			position = { x = 639 y = 55 }
-			textureFile = ""
-			font = "vic_18_black"
-			borderSize = {x = 0 y = 0}
-			text = "32"
-			maxWidth = 20
-			maxHeight = 20
-			format = centre
-			Orientation = "UPPER_LEFT"
-			fixedsize = yes
-		}
-
+		
 		iconType = {
 			name = "icon_miltech"
 			spriteType = "GFX_icon_miltech"
@@ -825,7 +435,26 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
 		}
-	
+		
+		iconType = {
+			name = "icon_ecotech"
+			spriteType = "GFX_icon_ecotech"
+			position = { x = 607 y = 45 }
+		}
+		instantTextBoxType = {
+			name = "ecotech_value"
+			position = { x = 639 y = 55 }
+			textureFile = ""
+			font = "vic_18_black"
+			borderSize = {x = 0 y = 0}
+			text = "32"
+			maxWidth = 20
+			maxHeight = 20
+			format = centre
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+		}
+		
 		iconType = {
 			name = "icon_cultech"
 			spriteType = "GFX_icon_cultech"
@@ -848,7 +477,7 @@ guiTypes = {
 		iconType = {
 			name ="icon_tax"
 			spriteType = "GFX_icon_wealth"
-			position = { x= 282 y = 164 } #ex 172 263
+			position = { x= 282 y = 164 }
 		}
 		
 		instantTextBoxType = {
@@ -868,7 +497,12 @@ guiTypes = {
 		iconType = {
 			name ="icon_strait"
 			spriteType = "GFX_icon_strait"
-			position = { x= 551 y = 207 }
+			position = { x= 552 y = 207 }
+		}
+		iconType = {
+			name ="icon_route"
+			spriteType = "GFX_icon_route"
+			position = { x= 528 y = 207 }
 		}
 		
 		###### Siege interface 
@@ -896,13 +530,15 @@ guiTypes = {
 				position = { x= 0 y = 0 }
 				Orientation = "UPPER_LEFT" }
 						
-			iconType = {
+			iconType =
+			{
 				name ="siege_bg"
 				spriteType = "GFX_combat_siege_bg"
 				position = { x= 0 y = 0 }
-				Orientation = "UPPER_LEFT" }
-
-			guiButtonType = {
+				Orientation = "UPPER_LEFT"
+			}
+			guiButtonType =
+			{
 				name ="siege_shield"
 				quadTextureSprite = "GFX_shield_medium2"
 				position = { x= 156 y = 27 }
@@ -917,14 +553,6 @@ guiTypes = {
 				maxHeight = 20
 				fixedsize = yes
 				format = centre
-			}
-
-			guiButtonType =	{
-				name = "assault"
-				position = {x= 267 y = 54 }
-				quadTextureSprite ="GFX_siege_assault_button"	
-				Orientation = "UPPER_LEFT"
-				clicksound = generic_click_02
 			}
 			
 			### attackers
@@ -1138,15 +766,20 @@ guiTypes = {
 			iconType = {
 				name ="to_few_men"
 				spriteType = "GFX_icon_siege_tofewmen_arko"
-				#position = { x= 99 y = 125 }
 				position = { x= 267 y = 54 }
 				Orientation = "UPPER_LEFT"
-			}			
+			}
 
 		}
 
-
-
+			guiButtonType =	{
+				name = "assault"
+				position = {x= 267 y = 54 }
+				quadTextureSprite ="GFX_siege_assault_button"	
+				Orientation = "UPPER_LEFT"
+				clicksound = generic_click_02
+				shortcut = "c"
+			}
 
 			iconType = {
 				name ="the_wall"
@@ -1154,7 +787,6 @@ guiTypes = {
 				position = { x= 306 y = 60 }
 				Orientation = "UPPER_LEFT"
 			}
-
 			
 			### defenders
 			
@@ -1201,24 +833,27 @@ guiTypes = {
 			#	Orientation = "UPPER_LEFT"
 			#}
 			
-			iconType = {
+			iconType =
+			{
 				name ="morale"
 				spriteType = "GFX_combat_siege_morale_def"
 				position = { x= 223 y = 127 }
-				Orientation = "UPPER_LEFT" }
-				
+				Orientation = "UPPER_LEFT"
+			}
+			
 			iconType = {
 				name ="label_arko_small_1"
 				spriteType = "GFX_label_arko_small"
 				position = { x= 264 y = 30 }
-				Orientation = "UPPER_LEFT" }
+				Orientation = "UPPER_LEFT"
+				}
 				
 			iconType = {
 				name ="label_arko_small_2"
 				spriteType = "GFX_label_arko_small"
 				position = { x= 264 y = 87 }
-				Orientation = "UPPER_LEFT" }
-				
+				Orientation = "UPPER_LEFT"
+				}
 			iconType = {
 				name ="garrison_icon"
 				spriteType = "GFX_combat_siege_end_garrison"
@@ -1236,7 +871,6 @@ guiTypes = {
 				position = { x = 285 y = 38 }
 				textureFile = ""
 				font = "vic_18_black"
-				#font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "2,457"	
 				maxWidth = 40
@@ -1249,7 +883,6 @@ guiTypes = {
 				position = { x = 285 y = 94 }
 				textureFile = ""
 				font = "vic_18_black"
-				#font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "2,457"	
 				maxWidth = 40
@@ -1295,10 +928,623 @@ guiTypes = {
 			quadTextureSprite ="GFX_province_toggle_siege"
 			Orientation = "UPPER_LEFT"
 			clicksound = generic_click_04
+			shortcut = "z"
 		}
 		
 		
+		### PROVINCE EXTENDED VIEW
+		windowType = {
+			name = "province_extension"   
+			backGround =""
+			position = { x=0 y=635 }
+			size = { x=1024 y=224	 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = "0"
+			verticalBorder = ""
+			fullScreen = no
+			orientation = "UPPER_LEFT"
+			upsound = click
+			
+			iconType = {
+				name ="bg_province_extended"
+				spriteType = "GFX_province_bg_extended"
+				#spriteType = "GFX_domaine"
+				position = { x= 0 y = -401 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			# TRADE POST
+			windowType = {
+				name = "trade_window"   
+				backGround =""
+				position = { x=-1 y=-400 }
+				size = { x=1024 y=224	 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				orientation = "UPPER_LEFT"
+				upsound = click
+
+#				iconType = {
+#					name ="domaine"
+#					spriteType = "GFX_domaine"
+##					position = { x= 1 y = -1 }
+#					Orientation = "UPPER_LEFT"
+#				}
+				
+				instantTextBoxType = { #TP label pffffffff
+					name = "trade_post_title"
+					position = { x = 175 y = 105 }
+					textureFile = ""
+					font = "vic_18_black"
+					text = "PV_TRADE_POST"
+					maxWidth = 300
+					maxHeight = 20
+					format = centre
+					fixedsize = yes
+				}
+			
+		
+#				iconType = {
+#					name ="trade_post_bg_arko"
+#					spriteType = "GFX_parchemin_arko" #fond TP
+#					position = { x= 273 y = 0 }
+#				}
+#				iconType = {
+#					name ="trade_post_bg_notbuilt"
+#					spriteType = "GFX_trade_post_bg_notbuilt_arko" #liseré coloré pour TP chrétien
+#					position = { x= 273 y = 0 }
+#				}	
+
+				guiButtonType = {
+					name = "holding"
+					position = { x = 550 y = -1 }
+					quadTextureSprite = "GFX_trade_post"
+					Orientation = "UPPER_LEFT"
+				}				
+				guiButtonType = {
+					name = "republic_shield" #on TP haut
+					position = { x= 582 y = -5 }
+					quadTextureSprite ="GFX_shield_medium"
+					Orientation = "UPPER_LEFT"
+				}
+				iconType =
+				{
+					name ="republic_crown"
+					spriteType = "GFX_shield_crown_strip_medium"
+					position = { x= -9100 y = 11 }
+					Orientation = "UPPER_LEFT"
+				}
+			
+				guiButtonType = {
+					name = "family_shield" #on left
+					position = { x= 289 y = 16 }
+					quadTextureSprite ="GFX_CoA_medium"
+					Orientation = "UPPER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "primary_shield" #où ?
+					position = { x= 557 y = 149 }
+					quadTextureSprite ="GFX_shield_small"
+					Orientation = "UPPER_LEFT"
+				}
+
+				iconType =
+				{
+					name ="primary_crown"
+					spriteType = "GFX_shield_crown_strip_medium"
+					position = { x= -100 y = 11 }
+					Orientation = "UPPER_LEFT"
+				}
+				
+				guiButtonType = {
+					name ="control_shield"
+					quadTextureSprite = "GFX_shield_medium2"
+					position = { x = 619 y = 80 } #liege/control haut TP droite
+					Orientation = "UPPER_LEFT"
+				}
+				##icons
+				iconType = {
+					name ="progress_bg1"
+					spriteType = "GFX_levy_progress_bg"
+					position = { x= 453 y = 119 }
+					Orientation = "UPPER_LEFT"
+				}
+				
+				iconType = {
+					name ="garrison_size"
+					spriteType = "GFX_levyprogress_1"
+					position = { x= 457 y = 124 } #x+5 y+5
+					Orientation = "UPPER_LEFT"
+				}
+				iconType = {
+					name = "garrison_icon"
+					spriteType = "GFX_garrison_arko"
+					position = { x= 455 y = 98 } #x-19 y-4
+					Orientation = "UPPER_LEFT"
+				}
+				iconType = {
+					name ="garrison_icon2"
+					spriteType = "gfx_transparency_white"
+					position = { x= 465 y = 102 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "GARRISON_SIZE"
+				}
+				iconType = 
+				{ #ajout
+					name ="label_republic_arko"
+					spriteType ="GFX_label_arko"
+					position = { x = 549 y = 120 }
+					Orientation = "UPPER_LEFT"
+				}				
+				instantTextBoxType = {
+					name = "republic_name" #en sous titre
+					position = { x = 550 y = 125 }
+					textureFile = ""
+					font = "vic_22_black"
+					borderSize = {x = 0 y = 0}
+					text = ""
+					maxWidth = 128
+					maxHeight = 20
+					format = center
+					Orientation = "UPPER_LEFT"
+					fixedsize = yes
+				}
+				
+				instantTextBoxType = { #left panel
+					name = "family_name"
+					position = { x = 342 y = 28 }
+					textureFile = ""
+					font = "vic_22_black"
+					borderSize = {x = -5 y = 0}
+					text = ""
+					maxWidth = 227
+					maxHeight = 20
+					format = left
+					Orientation = "UPPER_LEFT"
+					fixedsize = yes
+				}
+				iconType = {
+					name ="tax_icon"
+					spriteType ="GFX_icon_wealth"
+					position = { x = 499 y = 92 }
+					Orientation = "UPPER_LEFT"
+					#pdx_tooltip = "INCOME_TRADEPOST"
+				}
+				iconType = {
+					name ="fort_icon"
+					spriteType ="GFX_buildview_fort_icon"
+					position = { x = 405 y = 99 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "FORT_LEVEL"
+				}
+				
+				instantTextBoxType = {
+					name = "settlement_Taxinfo"
+					position = { x = 485 y = 118 }
+					textureFile = ""
+					font = "vic_18_black"
+					borderSize = {x = 0 y = 0}
+					text = ""
+					maxWidth = 35
+					maxHeight = 25
+					format = right
+					fixedsize = yes
+					Orientation = "UPPER_LEFT"
+				}
+				
+				instantTextBoxType = {
+					name = "settlement_Fortlevel"
+					position = { x = 405 y = 119 } #x+41 y+6
+					textureFile = ""
+					font = "vic_18_black"
+					borderSize = {x = 0 y = 0}
+					text = ""
+					maxWidth = 36
+					maxHeight = 25
+					format = centre
+					fixedsize = yes
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "FORT_LEVEL"
+				}
+			
+			instantTextBoxType = {
+				name = "settlement_GarrisonSize"
+				position = { x = 448 y = 119 } #x+21 y+5
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = ""
+				maxWidth = 35
+				maxHeight = 25
+				format = right
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "GARRISON_SIZE"
+			}
+			
+			### trade zone
+			instantTextBoxType = {
+				name = "TradeZone_label"
+				position = { x = 292 y = 67 } #x+330 y-110
+				textureFile = ""
+				font = "vic_18_black"
+				borderSize = {x = 0 y = 0}
+				text = "TRADE_ZONE"
+				maxWidth = 120
+				maxHeight = 25
+				format = left
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name ="tradezone_value_icon"
+				spriteType = "GFX_trade_zone_value"
+				position = { x= 457 y = 58 }
+			}
+			
+			instantTextBoxType = {
+				name = "tradezone_value"
+				position = { x = 447 y = 81 }
+				textureFile = ""
+				font = "vic_18_black"
+				borderSize = {x = 0 y = 0}
+				text = "666"
+				maxWidth = 48
+				maxHeight = 25
+				format = centre
+				fixedsize = yes
+			}
+			
+			iconType = {
+				name ="tradezone_size_icon"
+				spriteType = "GFX_trade_zone_size"
+				position = { x= 415 y = 63 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "tradezone_size"
+				position = { x = 404 y = 81 }
+				textureFile = ""
+				font = "vic_18_black"
+				borderSize = {x = 0 y = 0}
+				text = ""
+				maxWidth = 48
+				maxHeight = 25
+				format = centre
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name ="tradezone_income_icon"
+				spriteType ="GFX_icon_wealth"
+				position = { x = 499 y = 55 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "tradezone_income"
+				position = { x = 488 y = 81 } #x+31 y+7
+				textureFile = ""
+				font = "vic_18_black"
+				borderSize = {x = 0 y = 0}
+				text = ""
+				maxWidth = 48
+				maxHeight = 25
+				format = center
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			### family income
+			instantTextBoxType = {
+				name = "FamilyIncome_label"
+				position = { x = -9295 y = 68 }
+				textureFile = ""
+				font = "vic_18_black"
+				borderSize = {x = 0 y = 0}
+				text = "TOTAL_TRADE_FAMILY"
+				maxWidth = 120
+				maxHeight = 25
+				format = left
+				fixedsize = yes
+			}
+			
+			iconType = {
+				name ="Family_size_icon"
+				#spriteType = "GFX_trade_zone_size"
+				spriteType = "GFX_repview_tp_icon"
+				position = { x= 443 y = 26 }
+				Orientation = "UPPER_LEFT"
+			}
+				instantTextBoxType = {
+					name = "Family_size"
+					position = { x = 452 y = 32 } #x+26 y+2
+					textureFile = ""
+					font = "vic_18_black"
+					borderSize = {x = 0 y = 0}
+					text = "666"
+					maxWidth = 48
+					maxHeight = 25
+					format = centre
+					fixedsize = yes
+					Orientation = "UPPER_LEFT"
+				}
+			
+			iconType = {
+				name ="Family_income_icon"
+				spriteType ="GFX_icon_wealth"
+				position = { x = 499 y = 25 }
+			}
+				instantTextBoxType = {
+					name = "Family_income"
+					position = { x = 526 y = 32 } #x+31 y+7
+					textureFile = ""
+					font = "vic_18_black"
+					borderSize = {x = 0 y = 0}
+					text = "666"
+					maxWidth = 48
+					maxHeight = 25
+					format = center
+					fixedsize = yes
+				}
+				
+				iconType = { #"no trade post built" + barre progression construction.
+					name ="build_progress"
+					#spriteType = "GFX_build_progress"
+					spriteType = "GFX_default_progress_arko2"
+					position = { x= 564 y = 95 }
+				}			
+			}
+			
+
+#			iconType = {
+#				name ="build_progress_overlay"
+#				spriteType = "GFX_default_progress_overlay"
+#				position = { x= 284 y = 62 } #x-8 y-9
+#			}
+#			instantTextBoxType = {
+#				name = "info_text"
+#				position = { x = 301 y = 82 }
+#				textureFile = ""
+#				font = "vic_22_black"
+#				#borderSize = {x = 0 y = 0}
+#				borderSize = {x = 0 y = 0}
+#				text = "TP_NO_TRADE_POST_BUILT"
+#				maxWidth = 145
+#				maxHeight = 80
+#				format = centre
+#				fixedsize = yes
+#
+#				allwaystransparent = yes
+#			}
+#	}
+
+			# FORT
+			windowType = {
+				name = "fort_window"   
+				backGround =""
+				position = { x=-1 y=-400 }
+				size = { x=1024 y=224	 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				orientation = "UPPER_LEFT"
+				upsound = click
+	
+				instantTextBoxType = {
+					name = "fort_title"
+					position = { x = 42 y = 67 } 
+					textureFile = ""
+					font = "vic_18_black"
+					text = "PV_FORT"
+					maxWidth = 300
+					maxHeight = 20
+					format = left
+					fixedsize = yes
+				}
+			
+				guiButtonType = {
+					name = "holding"
+					position = { x = 157 y = -1 }
+					quadTextureSprite = "GFX_fort"
+					Orientation = "UPPER_LEFT"
+				}
+				
+				guiButtonType = {
+					name = "republic_shield" #liege realm CoA
+					position = { x= 26 y = 9 }
+					quadTextureSprite ="GFX_shield_medium"
+					Orientation = "UPPER_LEFT"
+				}
+				iconType =
+				{
+					name ="republic_crown"
+					spriteType = "GFX_shield_crown_strip_small"
+					position = { x= -9050 y = 11 } #kicked out
+					Orientation = "UPPER_LEFT"
+				}
+				
+				guiButtonType = {
+					name = "primary_shield" #owner realm CoA
+					position = { x= 189 y = -5 }
+					quadTextureSprite ="GFX_shield_medium"
+					Orientation = "UPPER_LEFT"
+				}
+
+				iconType =
+				{
+					name ="primary_crown"
+					spriteType = "GFX_shield_crown_strip_medium"
+					position = { x= -9138 y = 11 } #kicked out
+					Orientation = "UPPER_LEFT"
+				}
+				
+				iconType = {
+					name ="progress_bg1" #levy/garr bar
+					spriteType = "GFX_levy_progress_bg"
+					position = { x= 103 y = 120 }
+					Orientation = "UPPER_LEFT"
+				}
+				iconType = {
+					name ="garrison_size"
+					spriteType = "GFX_levyprogress_1"
+					position = { x= 107 y = 125 }
+					Orientation = "UPPER_LEFT"
+				}
+				iconType = {
+					name = "garrison_icon"
+					spriteType = "GFX_garrison_arko"
+					position = { x= 105 y = 99 }
+					Orientation = "UPPER_LEFT"
+				}
+				iconType = {
+					name ="garrison_icon2"
+					spriteType = "gfx_transparency_white"
+					position = { x= 115 y = 103 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "GARRISON_SIZE"
+				}	
+				
+				instantTextBoxType = {
+					name = "republic_name" #liege DF realm name
+					position = { x = 76 y = 28 }
+					textureFile = ""
+					font = "vic_22_black"
+					borderSize = {x = 0 y = 0}
+					text = ""
+					maxWidth = 92
+					maxHeight = 20
+					format = centre
+					Orientation = "UPPER_LEFT"
+					fixedsize = yes
+				}
+				iconType = 
+				{ #ajout
+					name ="label_republic_arko"
+					spriteType ="GFX_label_arko"
+					position = { x = 155 y = 120 }
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "family_name" #DF facto owner name, on holding, bottom
+					position = { x = 148 y = 124 }
+					textureFile = ""
+					font = "vic_22_black"
+					borderSize = {x = 0 y = 0}
+					text = ""
+					maxWidth = 140
+					maxHeight = 20
+					format = centre
+					Orientation = "UPPER_LEFT"
+					fixedsize = yes
+				}
+				iconType = {
+					name ="tax_icon"
+					spriteType ="GFX_icon_wealth"
+					position = { x = 40 y = 96 }
+					Orientation = "UPPER_LEFT"
+				}
+				iconType = {
+					name ="fort_icon"
+					spriteType ="GFX_buildview_fort_icon"
+					position = { x = 106 y = 65 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "FORT_LEVEL"
+				}
+
+				
+				instantTextBoxType = {
+					name = "settlement_Taxinfo"
+					position = { x = 15 y = 120 }
+					textureFile = ""
+					font = "vic_18_black"
+					borderSize = {x = 0 y = 0}
+					text = ""
+					maxWidth = 50
+					maxHeight = 25
+					format = right
+					fixedsize = yes
+					Orientation = "UPPER_LEFT"
+				}
+				
+				instantTextBoxType = {
+					name = "settlement_Fortlevel"
+					position = { x =99 y = 86 }
+					textureFile = ""
+					font = "vic_18_black"
+					borderSize = {x = 0 y = 0}
+					text = ""
+					maxWidth = 32
+					maxHeight = 25
+					format = right
+					fixedsize = yes
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "FORT_LEVEL"
+				}
+				
+				instantTextBoxType = {
+					name = "settlement_GarrisonSize"
+					position = { x = 93 y = 120 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 0 y = 0}
+					text = ""
+					maxWidth = 40
+					maxHeight = 25
+					format = right
+					fixedsize = yes
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "GARRISON_SIZE"
+				}
+				
+				iconType = {
+					name ="build_progress"
+					spriteType = "GFX_default_progress_arko2"
+					position = { x= 171 y = 96 }
+				}
+			}
+		}
+		### tabs for trade post / holdings.
+
+		guiButtonType = { #funky ugly new generic switch button
+			name = "province_extend"
+			position = { x = 681 y = 289 }
+			quadTextureSprite = "GFX_province_extend"
+			#quadTextureSprite = "GFX_province_tab_button"
+			Orientation = "UPPER_LEFT"
+#			pdx_tooltip = "LEDGER_PROVINCE_SETTLEMENTS"
+			clicksound = generic_click_04
+		}
+#		iconType = {
+#			name ="holding_tab_icon"
+#			spriteType ="GFX_holding_tab_icon"
+#			position = { x = 683 y = 299 }
+#		}
+#		guiButtonType = {
+#			name = "tradetab_trade"
+#			position = { x = 681 y = 340 }
+#			quadTextureSprite = "GFX_province_tab_button"
+#			Orientation = "UPPER_LEFT"
+#			pdx_tooltip = "TRADE"
+#		}
+#		iconType = {
+#			name ="trade_post_tab_icon"
+#			spriteType ="GFX_trade_post_tab_icon"
+#			position = { x = 679 y = 348 }
+#		}
+		
 	}
+	
 	### disease entry
 	windowType = {
 		name = "disease_entry"
@@ -1334,7 +1580,7 @@ guiTypes = {
 		iconType =
 		{
 			name ="strip_temp_mods"
-#			spriteType = "GFX_modifier_icons_arko"
+#			spriteType = "GFX_modifier_icons_arko" #pour L3T
 			spriteType = "GFX_modifier_icons"
 			position = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -1383,13 +1629,13 @@ guiTypes = {
 	}
 	
 	
-	### CHOOSE SETTLEMENT #unused it seems
+	### CHOOSE SETTLEMENT #pas utilise géré via la vue batiments
 	eu3dialogtype = {
 		name = "ChooseSettlementDialog"
 		backGround="Background"
 		position = { x=900 y=-1030 }
 		size = { x=520 y=380 }
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
@@ -1493,28 +1739,31 @@ guiTypes = {
 			position = { x = 11 y = 7 }
 			Orientation = "UPPER_LEFT"
 			clicksound = click
+			#scale = 0.75
 		}
 		#SHIELDS
+		guiButtonType = {
+			name ="holder_shield"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 25 y = -32 } #ex x32 y-1
+			Orientation = "UPPER_LEFT"
+		}
+		
 		guiButtonType = {
 			name ="control_shield"
 			quadTextureSprite = "GFX_shield_medium2"
 			position = { x = 62 y = 61 }
 			Orientation = "UPPER_LEFT"
 		}
-		guiButtonType = {
-			name ="holder_shield"
-			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 25 y = -32 } #ex x32 y-1
-			Orientation = "UPPER_LEFT"
-		}		
+
 		guiButtonType = {
 			name ="realm_shield"
 			quadTextureSprite = "GFX_shield_medium2"
 			position = { x = 71 y = -24 }
 			Orientation = "UPPER_LEFT"
-		}
+		}	
 		
-		#BARS
+		#BARRES
 		iconType = {
 			name ="progress_bg1" #garrison bar #background
 			spriteType = "GFX_levy_progress_bg"
@@ -1603,6 +1852,13 @@ guiTypes = {
 		fullScreen = no
 		
 		iconType = {
+			name = "province_settlement_frame" #ajout 2.4.x
+			spriteType = "GFX_province_capital_settlement_frame"
+			position = { x= 10 y = 7 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
 			name = "settlement_owner_frame"
 			spriteType = "GFX_province_capitol_owner_frame"
 			position = { x= 12 y = 7 }
@@ -1618,17 +1874,19 @@ guiTypes = {
 		}
 		#SHIELDS
 		guiButtonType = {
-			name ="control_shield"
-			quadTextureSprite = "GFX_shield_medium2"
-			position = { x = 71 y = 69 }
-			Orientation = "UPPER_LEFT"
-		}
-		guiButtonType = {
 			name ="holder_shield"
 			quadTextureSprite = "GFX_shield_medium"
 			position = { x = 35 y = -29 }
 			Orientation = "UPPER_LEFT"
 		}
+		
+		guiButtonType = {
+			name ="control_shield"
+			quadTextureSprite = "GFX_shield_medium2"
+			position = { x = 71 y = 69 }
+			Orientation = "UPPER_LEFT"
+		}
+
 		guiButtonType = {
 			name ="realm_shield"
 			quadTextureSprite = "GFX_shield_medium2"
@@ -1716,7 +1974,6 @@ guiTypes = {
 			position = { x= 6 y = 20 }
 			Orientation = "UPPER_LEFT"
 		}
-		
 		guiButtonType = {
 			name = "shield"
 			position = { x= 0 y = 0 }
