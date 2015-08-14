@@ -450,6 +450,14 @@ guiTypes = {
 			fixedsize = yes
 			allwaystransparent = yes
 		}
+		
+		iconType = {
+			name ="icon_cantbuildreason"
+			spriteType = "GFX_buildview_cantbuildicon"
+			position = { x= 210 y = 3 }
+			Orientation = "UPPER_LEFT"
+		}
+		
 		instantTextBoxType = {
 			name = "cost"
 			position = { x = 283 y = 8 }
@@ -481,13 +489,6 @@ guiTypes = {
 			position = { x=265 y = 0 }
 			quadTextureSprite ="GFX_buildview_buildbutton"
 			clicksound = generic_click_04
-		}
-		
-		iconType = {
-			name ="icon_cantbuildreason"
-			spriteType = "GFX_buildview_cantbuildicon"
-			position = { x= 268 y = 3 }
-			Orientation = "UPPER_LEFT"
 		}		
 		
 		instantTextBoxType = {
@@ -522,6 +523,12 @@ guiTypes = {
 			position = { x= 392 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
+		
+		iconType = {
+			name ="buildview_not_active_icon"
+			spriteType = "GFX_buildview_not_active_icon"
+			position = { x= 397 y = 6 }
+		}
 	}
 	
 	
@@ -541,9 +548,9 @@ guiTypes = {
 		click_to_front = yes
 		
 		guiButtonType = {
-			name = "build_settlement_bg_area"
+			name = "build_settlement_bg_area" #for grabbing
 			quadTextureSprite = "GFX_build_settlement_bg_area"
-			position = { x= 0 y = 0 }
+			position = { x= 0 y = -10 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -567,7 +574,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-		
 		instantTextBoxType = {
 			name = "headline"
 			position = { x = 0 y = 7 }
@@ -578,6 +584,14 @@ guiTypes = {
 			maxWidth = 280
 			maxHeight =24	
 			format = centre
+		}
+
+		iconType = #à regarder
+		{
+			name ="icon_fort"
+			spriteType = "GFX_buildview_has_fort"
+			position = { x= 29 y = -8 }
+			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType =	{
@@ -610,8 +624,7 @@ guiTypes = {
 		horizontalBorder = ""
 		verticalBorder = ""
 		fullScreen = no
-
-				
+		
 		guiButtonType = {
 			name = "build_banner"
 			position = { x=240 y = 2}
@@ -658,7 +671,7 @@ guiTypes = {
 		}
 		iconType =
 		{
-			name ="icon_wealth"
+			name ="icon_cost"
 			spriteType = "GFX_icon_wealth"
 			position = { x= 230 y = 33 }
 			Orientation = "UPPER_LEFT"
