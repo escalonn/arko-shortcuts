@@ -1,6 +1,6 @@
 #########################################
 Keyboard Shortcuts for ARKOpack Interface
-version 1.0.1
+version 1.0.1 (non-SWMH)
 for ARKOpack Interface version 2015-08-15
 
 Keyboard Shortcuts submod thread: https://forum.paradoxplaza.com/forum/index.php?threads/submod-keyboard-shortcuts-for-arkopack-interface.850867/
@@ -18,7 +18,8 @@ INSTALLATION INSTRUCTIONS:
 1. Locate a HIP installation that includes a copy of the correct version of
    ARKOpack Interface. Check the version.txt file to verify the ARKOpack
    Interface version.
-2. Extract archive into the HIP folder, overwriting all conflicting files.
+2. Ensure no version of SWMH is installed.
+3. Extract archive into the HIP folder, overwriting all conflicting files.
 
 USAGE:
 See below for an updated version of Arumba’s readme explaining the various
@@ -32,6 +33,9 @@ v will create a new vassal from the holding screen of minor owned baronies
 b will go to the next holding in demesne
 s is bound to the 'split navy' button if you have a single navy selected
 / opens the find title interface
+
+Note that n no longer merges or splits units, and z and b no longer rebalance
+them.
 
 TROUBLESHOOTING:
 If you have problems using this submod, delete your HIP folder and reinstall
@@ -50,10 +54,9 @@ Arumba. This submod is maintained by IoannesBarbarus.
 
 #########################################
 
-Keyboard Shortcuts + Interface Adjust:
-	Interface Adjust:  Adjusts the character selection GUI so that it does not overlap with the character interface.
+Interface Adjust:  Adjusts the character selection GUI so that it does not overlap with the character interface.
 
-	Keyboard Shortcuts: This adds 10 shortcuts to the game: "z","x","c","v","b","n",",",".","/","l"
+Keyboard Shortcuts:
 
 z raises levy directly from any county you have control over
 z also toggles siege interface while selecting a province or army in an enemy province.
@@ -76,6 +79,7 @@ b will go to the next holding in demesne
 b is also back button for the main interfaces
 
 g merges selected levies or ships if you have multiple armies selected, so long as they are in the same zone or province (naturally.)
+
 s is bound to the 'split army/navy' button if you have a single army or navy selected
 
 l toggles looter status for pagan armies
