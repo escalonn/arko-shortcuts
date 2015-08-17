@@ -1126,7 +1126,7 @@ guiTypes = {
 			{
 				name ="left_window"
 				backGround=""
-				position = { x=0 y =-18}	
+				position = { x=-3 y =-18}	
 				size = { x=420 y =500}
 				moveable = 0
 				dontRender = ""
@@ -1333,7 +1333,7 @@ guiTypes = {
 			{
 				name ="right_window"
 				backGround=""
-				position = { x=-138 y =-18}	
+				position = { x=-133 y =-18}	
 				size = { x=542 y =500}
 				moveable = 0
 				dontRender = ""
@@ -5170,7 +5170,7 @@ guiTypes = {
 				guiButtonType = 
 				{
 					name = "observe_button"
-					position = { x = -226 y = -125 }
+					position = { x = -236 y = -143 }
 					quadTextureSprite ="GFX_big_button_220_thin"	
 					buttonText = "OBSERVE"
 					buttonFont = "vic_18"

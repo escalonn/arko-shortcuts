@@ -502,7 +502,7 @@ guiTypes = {
 		iconType = {
 			name ="icon_route"
 			spriteType = "GFX_icon_route"
-			position = { x= 528 y = 207 }
+			position = { x= 528 y = 208 }
 		}
 		
 		###### Siege interface 
@@ -977,7 +977,7 @@ guiTypes = {
 				
 				instantTextBoxType = { #TP label pffffffff
 					name = "trade_post_title"
-					position = { x = 175 y = 105 }
+					position = { x = 171 y = 111 }
 					textureFile = ""
 					font = "vic_18_black"
 					text = "PV_TRADE_POST"
@@ -1004,7 +1004,8 @@ guiTypes = {
 					position = { x = 550 y = -1 }
 					quadTextureSprite = "GFX_trade_post"
 					Orientation = "UPPER_LEFT"
-				}				
+				}	
+				
 				guiButtonType = {
 					name = "republic_shield" #on TP haut
 					position = { x= 582 y = -5 }
@@ -1051,26 +1052,26 @@ guiTypes = {
 				iconType = {
 					name ="progress_bg1"
 					spriteType = "GFX_levy_progress_bg"
-					position = { x= 453 y = 119 }
+					position = { x= 453 y = 122 }
 					Orientation = "UPPER_LEFT"
 				}
 				
 				iconType = {
 					name ="garrison_size"
 					spriteType = "GFX_levyprogress_1"
-					position = { x= 457 y = 124 } #x+5 y+5
+					position = { x= 457 y = 127 } #x+5 y+5
 					Orientation = "UPPER_LEFT"
 				}
 				iconType = {
 					name = "garrison_icon"
 					spriteType = "GFX_garrison_arko"
-					position = { x= 455 y = 98 } #x-19 y-4
+					position = { x= 455 y = 101 } #x-19 y-4
 					Orientation = "UPPER_LEFT"
 				}
 				iconType = {
 					name ="garrison_icon2"
 					spriteType = "gfx_transparency_white"
-					position = { x= 465 y = 102 }
+					position = { x= 465 y = 105 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "GARRISON_SIZE"
 				}
@@ -1097,7 +1098,7 @@ guiTypes = {
 				
 				instantTextBoxType = { #left panel
 					name = "family_name"
-					position = { x = 342 y = 28 }
+					position = { x = 393 y = 28 }
 					textureFile = ""
 					font = "vic_22_black"
 					borderSize = {x = -5 y = 0}
@@ -1111,21 +1112,21 @@ guiTypes = {
 				iconType = {
 					name ="tax_icon"
 					spriteType ="GFX_icon_wealth"
-					position = { x = 499 y = 92 }
+					position = { x = 502 y = 95 }
 					Orientation = "UPPER_LEFT"
 					#pdx_tooltip = "INCOME_TRADEPOST"
 				}
 				iconType = {
 					name ="fort_icon"
 					spriteType ="GFX_buildview_fort_icon"
-					position = { x = 405 y = 99 }
+					position = { x = 405 y =101 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "FORT_LEVEL"
 				}
 				
 				instantTextBoxType = {
 					name = "settlement_Taxinfo"
-					position = { x = 485 y = 118 }
+					position = { x = 493 y = 121 }
 					textureFile = ""
 					font = "vic_18_black"
 					borderSize = {x = 0 y = 0}
@@ -1139,7 +1140,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "settlement_Fortlevel"
-					position = { x = 405 y = 119 } #x+41 y+6
+					position = { x = 405 y = 122 } #x+41 y+6
 					textureFile = ""
 					font = "vic_18_black"
 					borderSize = {x = 0 y = 0}
@@ -1154,7 +1155,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "settlement_GarrisonSize"
-				position = { x = 448 y = 119 } #x+21 y+5
+				position = { x = 448 y = 122 } #x+21 y+5
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
@@ -1170,7 +1171,7 @@ guiTypes = {
 			### trade zone
 			instantTextBoxType = {
 				name = "TradeZone_label"
-				position = { x = 292 y = 67 } #x+330 y-110
+				position = { x = 292 y = 69 } #x+330 y-110
 				textureFile = ""
 				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
@@ -1185,12 +1186,12 @@ guiTypes = {
 			iconType = {
 				name ="tradezone_value_icon"
 				spriteType = "GFX_trade_zone_value"
-				position = { x= 457 y = 58 }
+				position = { x= 457 y = 60 }
 			}
 			
 			instantTextBoxType = {
 				name = "tradezone_value"
-				position = { x = 447 y = 81 }
+				position = { x = 447 y = 83 }
 				textureFile = ""
 				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
@@ -1204,13 +1205,13 @@ guiTypes = {
 			iconType = {
 				name ="tradezone_size_icon"
 				spriteType = "GFX_trade_zone_size"
-				position = { x= 415 y = 63 }
+				position = { x= 409 y = 65 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextBoxType = {
 				name = "tradezone_size"
-				position = { x = 404 y = 81 }
+				position = { x = 398 y = 83 }
 				textureFile = ""
 				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
@@ -1225,13 +1226,13 @@ guiTypes = {
 			iconType = {
 				name ="tradezone_income_icon"
 				spriteType ="GFX_icon_wealth"
-				position = { x = 499 y = 55 }
+				position = { x = 502 y = 57 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextBoxType = {
 				name = "tradezone_income"
-				position = { x = 488 y = 81 } #x+31 y+7
+				position = { x = 491 y = 83 } #x+31 y+7
 				textureFile = ""
 				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
@@ -1246,9 +1247,9 @@ guiTypes = {
 			### family income
 			instantTextBoxType = {
 				name = "FamilyIncome_label"
-				position = { x = -9295 y = 68 }
+				position = { x = 337 y = 28 }
 				textureFile = ""
-				font = "vic_18_black"
+				font = "vic_22_black"
 				borderSize = {x = 0 y = 0}
 				text = "TOTAL_TRADE_FAMILY"
 				maxWidth = 120
@@ -1261,12 +1262,12 @@ guiTypes = {
 				name ="Family_size_icon"
 				#spriteType = "GFX_trade_zone_size"
 				spriteType = "GFX_repview_tp_icon"
-				position = { x= 443 y = 26 }
+				position = { x= 458 y = 26 }
 				Orientation = "UPPER_LEFT"
 			}
 				instantTextBoxType = {
 					name = "Family_size"
-					position = { x = 452 y = 32 } #x+26 y+2
+					position = { x = 467 y = 32 } #x+26 y+2
 					textureFile = ""
 					font = "vic_18_black"
 					borderSize = {x = 0 y = 0}
@@ -1281,11 +1282,11 @@ guiTypes = {
 			iconType = {
 				name ="Family_income_icon"
 				spriteType ="GFX_icon_wealth"
-				position = { x = 499 y = 25 }
+				position = { x = 503 y = 25 }
 			}
 				instantTextBoxType = {
 					name = "Family_income"
-					position = { x = 526 y = 32 } #x+31 y+7
+					position = { x = 524 y = 32 } #x+31 y+7
 					textureFile = ""
 					font = "vic_18_black"
 					borderSize = {x = 0 y = 0}
@@ -1343,7 +1344,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "fort_title"
-					position = { x = 42 y = 67 } 
+					position = { x = -9042 y = 67 } 
 					textureFile = ""
 					font = "vic_18_black"
 					text = "PV_FORT"
@@ -1451,13 +1452,13 @@ guiTypes = {
 				iconType = {
 					name ="tax_icon"
 					spriteType ="GFX_icon_wealth"
-					position = { x = 40 y = 96 }
+					position = { x = 60 y = 76 }
 					Orientation = "UPPER_LEFT"
 				}
 				iconType = {
 					name ="fort_icon"
 					spriteType ="GFX_buildview_fort_icon"
-					position = { x = 106 y = 65 }
+					position = { x = 106 y = 63 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "FORT_LEVEL"
 				}
@@ -1465,7 +1466,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "settlement_Taxinfo"
-					position = { x = 15 y = 120 }
+					position = { x = 30 y = 100 }
 					textureFile = ""
 					font = "vic_18_black"
 					borderSize = {x = 0 y = 0}
@@ -1479,7 +1480,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "settlement_Fortlevel"
-					position = { x =99 y = 86 }
+					position = { x =99 y = 84 }
 					textureFile = ""
 					font = "vic_18_black"
 					borderSize = {x = 0 y = 0}
