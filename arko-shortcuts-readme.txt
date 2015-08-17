@@ -1,7 +1,8 @@
 #########################################
 Keyboard Shortcuts for ARKOpack Interface
-version 1.0.1 (non-SWMH)
+version 1.0.1 (SWMH)
 for ARKOpack Interface version 2015-08-15
+and SWMH v2.9 - 2015-08-15
 
 Keyboard Shortcuts submod thread: https://forum.paradoxplaza.com/forum/index.php?threads/submod-keyboard-shortcuts-for-arkopack-interface.850867/
 ARKOpack thread: https://forum.paradoxplaza.com/forum/index.php?threads/mod-arkopack-armoiries-interface.603251/
@@ -18,7 +19,7 @@ INSTALLATION INSTRUCTIONS:
 1. Locate a HIP installation that includes a copy of the correct version of
    ARKOpack Interface. Check the version.txt file to verify the ARKOpack
    Interface version.
-2. Ensure no version of SWMH is installed.
+2. Ensure the correct version of SWMH is installed.
 3. Extract archive into the HIP folder, overwriting all conflicting files.
 
 USAGE:
