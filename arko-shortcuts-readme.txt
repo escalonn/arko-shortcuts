@@ -19,7 +19,9 @@ INSTALLATION INSTRUCTIONS:
    ARKOpack Interface. Check the version.txt file to verify the ARKOpack
    Interface version.
 2. Ensure no version of SWMH is installed.
-3. Extract archive into the HIP folder, overwriting all conflicting files.
+3. The .zip archive contains one folder, named “arko-shortcuts-<version>”.
+   Extract the contents of that folder into HIP’s install folder (e.g.
+   “mod/Historical Immersion Project”), overwriting all conflicting files.
 
 USAGE:
 See below for an updated version of Arumba’s readme explaining the various
