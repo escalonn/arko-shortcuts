@@ -46,10 +46,9 @@ HIP (with ARKOpack Interface). Then, reinstall this submod on top. If problems
 persist, post in the submod’s thread.
 
 CHANGELOG:
-v1.0.1: Compatch for ARKOpack Interface version 2015-08-15 and
-        Keyboard Shortcuts + Interface Adjust version 2015-08-13.
-v1.0.0: Initial version for ARKOpack Interface version 2015-02-07 and
-        Keyboard Shortcuts + Interface Adjust version 2014-12-16.
+v1.0.2: Interface 2015-08-20, ArumbaKS 2015-08-13, and SWMH 2015-09-01.
+v1.0.1: Interface 2015-08-15, ArumbaKS 2015-08-13, and SWMH 2015-08-15.
+v1.0.0: Initial version for Interface 2015-02-07 and ArumbaKS 2014-12-16.
 
 ARKOpack Interface, part of the Historical Immersion Project, is developed by
 Arko. The original Keyboard Shortcuts + Interface Adjust mod is developed by
