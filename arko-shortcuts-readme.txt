@@ -1,7 +1,7 @@
 #########################################
 Keyboard Shortcuts for ARKOpack Interface
-version 1.0.1 (non-SWMH)
-for ARKOpack Interface version 2015-08-15
+version 1.0.2 (non-SWMH)
+for ARKOpack Interface version 2015-08-20
 
 Keyboard Shortcuts submod thread: https://forum.paradoxplaza.com/forum/index.php?threads/submod-keyboard-shortcuts-for-arkopack-interface.850867/
 ARKOpack thread: https://forum.paradoxplaza.com/forum/index.php?threads/mod-arkopack-armoiries-interface.603251/
