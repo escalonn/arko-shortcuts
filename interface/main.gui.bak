@@ -123,13 +123,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_icon_topbar_observe"
 			Orientation = "UPPER_LEFT"
 		}
-		
-		guiButtonType =	{
-			name = "icon_topbar_features"
-			position = { x = 7 y = 7 }
-			quadTextureSprite ="GFX_charview_features_link"
-			Orientation = "UPPER_LEFT"
-		}
 
 		guiButtonType =
 		{
