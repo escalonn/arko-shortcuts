@@ -1,8 +1,8 @@
 #########################################
 Keyboard Shortcuts for ARKOpack Interface
-version 1.0.2 (SWMH)
+version 1.0.3 (SWMH)
 for ARKOpack Interface version 2015-08-20
-and SWMH v2.901 - 2015-09-01
+and SWMH v2.902 - 2015-10-04
 
 Keyboard Shortcuts submod thread: https://forum.paradoxplaza.com/forum/index.php?threads/submod-keyboard-shortcuts-for-arkopack-interface.850867/
 ARKOpack thread: https://forum.paradoxplaza.com/forum/index.php?threads/mod-arkopack-armoiries-interface.603251/
@@ -46,6 +46,7 @@ HIP (with ARKOpack Interface). Then, reinstall this submod on top. If problems
 persist, post in the submod’s thread.
 
 CHANGELOG:
+v1.0.3: Interface 2015-08-20, ArumbaKS 2015-09-18, and SWMH 2015-10-04.
 v1.0.2: Interface 2015-08-20, ArumbaKS 2015-08-13, and SWMH 2015-09-01.
 v1.0.1: Interface 2015-08-15, ArumbaKS 2015-08-13, and SWMH 2015-08-15.
 v1.0.0: Initial version for Interface 2015-02-07 and ArumbaKS 2014-12-16.
