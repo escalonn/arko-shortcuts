@@ -119,7 +119,7 @@ guiTypes = {
 		guiButtonType = 
 		{
 			name = "icon_topbar_observe"
-			position = { x = 107 y = 7 }
+			position = { x = 7 y = 7 }
 			quadTextureSprite = "GFX_icon_topbar_observe"
 			Orientation = "UPPER_LEFT"
 		}
