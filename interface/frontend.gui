@@ -5044,7 +5044,7 @@ guiTypes = {
 				{
 					name ="SI_DLC"
 					spriteType = "GFX_dlc_icon_sunset_invasion"
-					position = { x= 93 y = -221 }
+					position = { x= 99 y = -221 }
 					Orientation = "LOWER_LEFT"
 				}
 				

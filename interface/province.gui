@@ -1546,7 +1546,6 @@ guiTypes = {
 		iconType =
 		{
 			name ="strip_temp_mods"
-#			spriteType = "GFX_modifier_icons_arko" #pour L3T
 			spriteType = "GFX_modifier_icons"
 			position = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
