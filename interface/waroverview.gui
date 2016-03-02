@@ -358,6 +358,18 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			shortcut = "ESCAPE"
 		}
+
+		iconType = {
+			name = "left_debug"
+			position = { x = 25 y = 30 }
+			spriteType = "GFX_waroverview_debug"
+		}
+
+		iconType = {
+			name = "right_debug"
+			position = { x = 545 y = 30 }
+			spriteType = "GFX_waroverview_debug"
+		}
 		
 		guiButtonType = {
 			name ="left_portrait"

@@ -202,7 +202,6 @@ guiTypes = {
 				position = { x = 215 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_split"
 				clicksound = generic_click_01
-				pdx_tooltip = "SPLIT_QUICK_MENU"
 		}
 		guiButtonType = {
 			name = "toggle_looter_button"
@@ -416,7 +415,6 @@ guiTypes = {
 				position = { x = 200 y = 39 }
 				quadTextureSprite ="GFX_unitpanel_button_split"
 				clicksound = generic_click_01
-				pdx_tooltip = "SPLIT_QUICK_MENU"
 		}
 		guiButtonType = {
 			name = "toggle_looter_button"
